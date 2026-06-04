@@ -1,0 +1,3 @@
+-- DEPRECATED: use 19_restore_schema_safe.sql instead.
+-- 18 referenced tables (e.g. video_watch_progress) that may not exist on production,
+-- which blocks CREATE FUNCTION and leaves restore_anonymous_account missing (HTTP 404).

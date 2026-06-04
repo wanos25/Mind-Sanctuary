@@ -1,0 +1,894 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "send": "Enviar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "saving": "Guardando…",
+    "saveChanges": "Guardar cambios",
+    "unsavedChanges": "Cambios sin guardar",
+    "back": "Atrás",
+    "close": "Cerrar",
+    "done": "Listo",
+    "retry": "Reintentar",
+    "delete": "Eliminar",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "share": "Compartir",
+    "reply": "Responder",
+    "regenerate": "Regenerar",
+    "continue": "Continuar",
+    "all": "Todos",
+    "newSession": "Nueva sesión",
+    "newChat": "Nuevo chat",
+    "signOut": "Cerrar sesión",
+    "search": "Buscar",
+    "open": "Abrir",
+    "select": "Seleccionar…",
+    "yes": "Sí",
+    "no": "No",
+    "skip": "Omitir",
+    "loadingShort": "Cargando…",
+    "somethingWrong": "Algo salió mal",
+    "untitled": "Sin título",
+    "anonymous": "Anónimo",
+    "guest": "Invitado",
+    "you": "Tú",
+    "more": "Más",
+    "filters": "Filtros",
+    "pause": "Pausa",
+    "resume": "Reanudar",
+    "discard": "Descartar"
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "insights": "Perspectivas",
+    "history": "Historial",
+    "voice": "Voz",
+    "settings": "Ajustes",
+    "profile": "Perfil",
+    "emergency": "Emergencia",
+    "startSession": "Iniciar sesión",
+    "activities": "Actividades"
+  },
+  "footer": {
+    "tagline": "Mind Sentinel · Un compañero silencioso para tu mundo interior"
+  },
+  "brand": {
+    "title": "MIND SENTINEL",
+    "tagline": "Plataforma de análisis psicológico con IA"
+  },
+  "login": {
+    "chooseAvatar": "Elige tu avatar",
+    "resumeSession": "Reanudar sesión",
+    "identityMode": "Modo de identidad",
+    "anonymous": "Anónimo",
+    "anonymousDesc": "Mantén la privacidad con un personaje",
+    "realIdentity": "Identidad real",
+    "realIdentityDesc": "Crear una cuenta",
+    "anonymousProfile": "Perfil anónimo",
+    "signIn": "Iniciar sesión",
+    "createAccount": "Crear cuenta",
+    "continuePrev": "Continuar sesión anterior",
+    "creating": "Creando…",
+    "loading": "Cargando…",
+    "enter": "Entrar",
+    "resume": "Reanudar",
+    "noAccount": "¿No tienes cuenta? Regístrate",
+    "hasAccount": "¿Ya tienes cuenta? Inicia sesión",
+    "fields": {
+      "nickname": "Apodo",
+      "nicknamePh": "Elige un apodo...",
+      "age": "Edad",
+      "agePh": "Tu edad",
+      "nicknameReason": "¿Por qué este apodo?",
+      "nicknameReasonPh": "Cuéntanos por qué elegiste este nombre...",
+      "email": "Correo",
+      "emailPh": "tu@correo.com",
+      "password": "Contraseña",
+      "passwordPh": "••••••••"
+    },
+    "errors": {
+      "anonFailed": "No se pudo crear la sesión anónima",
+      "authFailed": "Autenticación fallida",
+      "loginFailed": "Inicio de sesión fallido",
+      "emailNotConfirmed": "Verifica tu correo primero — revisa tu bandeja para el enlace.",
+      "invalidCreds": "Correo o contraseña incorrectos.",
+      "userExists": "Ya existe una cuenta con este correo. Intenta iniciar sesión.",
+      "weakPassword": "Contraseña demasiado débil. Usa al menos 6 caracteres.",
+      "rateLimit": "Demasiados intentos. Espera un momento."
+    },
+    "doctorAccess": {
+      "title": "Acceso clínico",
+      "subtitle": "Portal seguro para clínicos autorizados · supervisión de pacientes, revisión de crisis, perspectivas longitudinales"
+    },
+    "confirm": {
+      "checkInbox": "Revisa tu bandeja",
+      "confirmSent": "Enviamos un enlace de confirmación a {email}. Haz clic para activar tu cuenta.",
+      "resend": "Reenviar correo",
+      "resent": "Correo de confirmación reenviado",
+      "backToLogin": "Volver",
+      "pendingApplied": "Bienvenido de nuevo — tu perfil está listo."
+    },
+    "orContinueWith": "o continuar con"
+  },
+  "gender": {
+    "label": "Selecciona tu género",
+    "male": "Masculino",
+    "female": "Femenino"
+  },
+  "dashboard": {
+    "morning": "Buenos días",
+    "afternoon": "Buenas tardes",
+    "evening": "Buenas noches",
+    "welcomeTitle": "Bienvenido a tu",
+    "sanctuary": "santuario",
+    "welcomeDesc": "Un espacio tranquilo para reflexionar, comprender tus emociones y crecer. Cuando estés listo, comienza una nueva sesión — el Dr. Sentinel está aquí para escuchar.",
+    "viewInsights": "Ver perspectivas",
+    "totalSessions": "Sesiones totales",
+    "currentMood": "Estado actual",
+    "avgIntensity": "Intensidad media",
+    "quickActions": "Acciones rápidas",
+    "newSessionDesc": "Empezar a hablar",
+    "history": "Historial",
+    "historyDesc": "Sesiones anteriores",
+    "breathing": "Respiración",
+    "breathingDesc": "Técnica 4-7-8",
+    "emergencyDesc": "Apoyo en crisis",
+    "recentSessions": "Sesiones recientes",
+    "viewAll": "Ver todo →",
+    "noSessions": "Sin sesiones — comienza la primera.",
+    "beginNow": "Empezar ahora",
+    "scroll": "Desplaza",
+    "heroLine1": "Un santuario para",
+    "heroLine2": "tu mente.",
+    "heroDesc": "Sesiones de terapia cinematográficas guiadas por IA, diseñadas para ayudarte a comprender tus emociones, descifrar tus patrones y encontrar la calma — una respiración a la vez.",
+    "startSessionBtn": "Iniciar sesión",
+    "whatIs": "Qué es Mind Sentinel",
+    "therapy": "Terapia,",
+    "reimagined": "reinventada.",
+    "pillarsDesc": "Seis pilares trabajando juntos para que cada sesión sea un punto de inflexión.",
+    "journey": "El viaje",
+    "fromFirst": "De la primera palabra al",
+    "lastingChange": "cambio duradero.",
+    "step": "Paso",
+    "yourSanctuary": "Tu santuario",
+    "snapshotLine1": "Una visión de",
+    "snapshotLine2": "tu mundo interior.",
+    "calm": "Calma"
+  },
+  "features": {
+    "emotion": {
+      "title": "Detección emocional con IA",
+      "desc": "Análisis en tiempo real del tono, lenguaje y patrón para reflejar lo que sientes."
+    },
+    "voice": {
+      "title": "Terapia por voz",
+      "desc": "Habla con naturalidad. El Dr. Sentinel escucha con calidez y presencia pausada."
+    },
+    "crisis": {
+      "title": "Detección de crisis",
+      "desc": "Atento a las señales de angustia — y aporta ayuda real cuando es necesario."
+    },
+    "analytics": {
+      "title": "Analítica emocional",
+      "desc": "Observa tu clima interior con gráficos que respetan tu privacidad."
+    },
+    "recovery": {
+      "title": "Seguimiento de recuperación",
+      "desc": "Hitos personales que celebran cada pequeño avance real."
+    },
+    "companion": {
+      "title": "Sesiones de compañía con IA",
+      "desc": "Una presencia que te recuerda entre visitas, sin juicios."
+    }
+  },
+  "timeline": {
+    "intake": {
+      "title": "Evaluación inicial",
+      "desc": "Una entrada suave — tu historia, tu ritmo, tus límites."
+    },
+    "session": {
+      "title": "Sesión con IA",
+      "desc": "Habla libremente con el Dr. Sentinel en un espacio seguro e inmersivo."
+    },
+    "analysis": {
+      "title": "Análisis emocional",
+      "desc": "Patrones, distorsiones e intensidad en tiempo real."
+    },
+    "insights": {
+      "title": "Generación de perspectivas",
+      "desc": "Tu paisaje emocional visualizado a lo largo de las sesiones."
+    },
+    "tracking": {
+      "title": "Seguimiento de recuperación",
+      "desc": "Hitos que crecen contigo. Progreso silencioso y honesto."
+    }
+  },
+  "chat": {
+    "placeholder": "Comparte lo que tienes en mente...",
+    "thinking": "El Dr. Sentinel está pensando",
+    "memoryActive": "Memoria activa",
+    "highDistress": "Se detectó alta angustia. No estás solo — hay apoyo extra aquí.",
+    "talkToSpecialist": "Hablar con un especialista real",
+    "openEmergency": "Abrir apoyo de emergencia →",
+    "uploadComing": "Subida de archivos próximamente",
+    "threads": "Hilos",
+    "currentChat": "Chat actual",
+    "drSentinel": "Dr. Sentinel",
+    "reflection": "Reflexión",
+    "dropFiles": "Suelta los archivos para adjuntar",
+    "inputHint": "Enter para enviar · Shift+Enter para nueva línea · Suelta o pega archivos para adjuntar",
+    "attach": "Adjuntar archivo",
+    "uploading": "Subiendo",
+    "ready": "Listo",
+    "uploadFailed": "Subida fallida",
+    "remove": "Quitar adjunto",
+    "scrollToBottom": "Ir abajo",
+    "newMessage": "mensaje nuevo",
+    "newMessages": "mensajes nuevos",
+    "backToDashboard": "Volver al panel",
+    "breathingExercise": "Ejercicio de respiración",
+    "insightsPanel": "Perspectivas",
+    "moodPanel": "Estado",
+    "currentState": "Estado actual",
+    "intensity": "Intensidad",
+    "patterns": "Patrones",
+    "recommendations": "Recomendaciones",
+    "startAnalysis": "Envía un mensaje para iniciar el análisis emocional.",
+    "searchSessions": "Buscar sesiones...",
+    "openSessions": "Abrir sesiones",
+    "sessionsTitle": "Sesiones",
+    "noConversations": "Tus conversaciones aparecerán aquí",
+    "noMatches": "Sin coincidencias",
+    "newConversation": "Nueva conversación",
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "thisWeek": "Esta semana",
+    "older": "Más antiguo",
+    "copyMessage": "Copiar mensaje",
+    "regenerateResponse": "Regenerar respuesta",
+    "deleteMessage": "Eliminar mensaje",
+    "shareMessage": "Compartir mensaje",
+    "replyTo": "Responder",
+    "like": "Útil",
+    "dislike": "No útil",
+    "toasts": {
+      "copyFailed": "Error al copiar",
+      "signInToUpload": "Inicia sesión para subir archivos",
+      "unsupported": "No soportado: {{name}}",
+      "tooLarge": "{{name}} supera 20 MB",
+      "uploadFailedToast": "Error al subir el audio",
+      "aiConnectFail": "No se pudo conectar con la IA",
+      "ttsFailedToast": "Respuesta de voz no disponible"
+    },
+    "reflectionPrompts": {
+      "p1": "Tómate un momento para notar cómo te sientes ahora. ¿Algo ha cambiado desde que empezamos?",
+      "p2": "¿Qué cosa quieres llevarte de la sesión de hoy?",
+      "p3": "Detengámonos un momento. Estás haciendo un trabajo importante.",
+      "p4": "¿Quieres probar un breve ejercicio de anclaje? Concéntrate en 5 cosas que veas a tu alrededor."
+    },
+    "breatheAction": "Respira",
+    "greeting": {
+      "welcomeBack": "Bienvenido de nuevo{{name}}. Me alegra verte. Recuerdo nuestras conversaciones anteriores. ¿Cómo has estado desde la última vez?",
+      "first": "Bienvenido{{name}}. Estás en un espacio seguro. Estoy aquí para escuchar y ayudarte a entender mejor tus emociones. Comparte lo que sientas — sin juicios."
+    },
+    "voiceGenerating": "Generando respuesta de voz…",
+    "repliedTo": "Respondiendo al mensaje",
+    "voiceUploading": "Enviando voz…",
+    "loadOlder": "Cargar anteriores",
+    "expandChats": "Expandir chats",
+    "collapseChats": "Contraer chats",
+    "newChatInSession": "Nuevo chat en esta sesión",
+    "noChatsYet": "Aún no hay chats",
+    "untitledChat": "Chat sin título",
+    "renameChat": "Renombrar chat",
+    "deleteChat": "Eliminar chat",
+    "confirmDeleteChat": "¿Eliminar este chat? Se borrarán los mensajes contenidos.",
+    "arrival": "Dr. Sentinel está aquí.",
+    "arriving": "Llegando…"
+  },
+  "lightbox": {
+    "openNewTab": "Abrir en pestaña nueva",
+    "close": "Cerrar"
+  },
+  "voice": {
+    "holdToRecord": "Mantén pulsado para grabar (toca para iniciar/detener)",
+    "releaseToSend": "Suelta para enviar",
+    "cancelRecording": "Cancelar",
+    "sendVoice": "Enviar mensaje de voz",
+    "holdLonger": "Mantén un momento más para grabar.",
+    "micUnavailable": "Micrófono no disponible. Concede acceso e inténtalo de nuevo.",
+    "playing": "Reproduciendo",
+    "pause": "Pausa",
+    "play": "Reproducir",
+    "generatingVoice": "Generando voz",
+    "voiceMessage": "[Mensaje de voz]",
+    "tapToSpeak": "Toca para hablar",
+    "listening": "Escuchando…",
+    "sentinelSpeaking": "Sentinel está hablando",
+    "voiceMode": "Modo voz",
+    "return": "Volver",
+    "stopListening": "Dejar de escuchar",
+    "startListening": "Empezar a escuchar",
+    "browserUnavailable": "Reconocimiento de voz no disponible en este navegador.",
+    "you": "tú",
+    "sentinel": "sentinel",
+    "stopVoiceInput": "Dejar de escuchar",
+    "startVoiceInput": "Iniciar entrada de voz",
+    "replayVoice": "Reproducir voz",
+    "playbackSpeed": "Velocidad de reproducción",
+    "assistantVoice": "Voz del asistente"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "subtitle": "Personaliza tu experiencia",
+    "sound": "Sonido",
+    "audio": "Audio",
+    "voice": "Voz",
+    "motion": "Movimiento y atmósfera",
+    "masterVolume": "Volumen general",
+    "aiBehavior": "Comportamiento de la IA",
+    "language": "Idioma",
+    "languageDesc": "Elige tu idioma preferido",
+    "privacy": "Privacidad y datos",
+    "exportData": "Exportar mis datos",
+    "deleteAll": "Eliminar todas las sesiones",
+    "account": "Cuenta",
+    "tones": {
+      "friendly": "Amistoso",
+      "friendlyDesc": "Cálido y conversacional",
+      "analytical": "Analítico",
+      "analyticalDesc": "Reflexivo y centrado en patrones",
+      "clinical": "Clínico",
+      "clinicalDesc": "Profesional y preciso"
+    },
+    "motionLevels": {
+      "full": "Completo",
+      "fullDesc": "Movimiento cinematográfico",
+      "reduced": "Reducido",
+      "reducedDesc": "Transiciones suaves",
+      "minimal": "Mínimo",
+      "minimalDesc": "Accesibilidad ante todo"
+    },
+    "streamingResponses": "Respuestas en streaming",
+    "streamingDesc": "Transmite las respuestas de la IA token a token",
+    "voiceReplies": "Respuestas por voz",
+    "voiceRepliesDesc": "Lee en voz alta las respuestas de la IA",
+    "speakingSpeed": "Velocidad del habla",
+    "testClick": "Probar clic",
+    "testChime": "Probar sonido",
+    "toasts": {
+      "exported": "Datos exportados",
+      "exportFailed": "Exportación fallida",
+      "deleted": "Datos eliminados",
+      "toneSet": "Tono de IA: {{tone}}",
+      "motionSet": "Movimiento: {{level}}",
+      "motionFail": "No se pudo guardar la preferencia de movimiento"
+    },
+    "confirmDelete": "¿Eliminar todas tus sesiones y mensajes? No se puede deshacer.",
+    "masterVolumeLabel": "Volumen principal",
+    "speakingSpeedLabel": "Velocidad de habla · {{rate}}x",
+    "appearance": "Apariencia"
+  },
+  "profile": {
+    "title": "Perfil",
+    "subtitle": "Tu identidad emocional con IA",
+    "sanctuaryIdentity": "Identidad del santuario",
+    "change": "Cambiar",
+    "stats": {
+      "sessions": "Sesiones",
+      "mood": "Ánimo",
+      "since": "Desde"
+    },
+    "editable": "Información editable",
+    "displayName": "Nombre visible",
+    "ageLabel": "Edad",
+    "genderLabel": "Género",
+    "emailLabel": "Correo",
+    "accountPrivacy": "Cuenta y privacidad",
+    "resetPassword": "Restablecer contraseña",
+    "exportMyData": "Exportar mis datos",
+    "exporting": "Exportando…",
+    "signOutAction": "Cerrar sesión",
+    "deleteAllMyData": "Eliminar todos mis datos",
+    "confirmDeleteTitle": "¿Eliminar todos tus datos?",
+    "confirmDeleteDesc": "Esto borrará permanentemente tus sesiones, mensajes e historial emocional. Tu cuenta permanecerá. No se puede deshacer.",
+    "confirmDeleteAction": "Sí, eliminar",
+    "deleting": "Eliminando…",
+    "toasts": {
+      "avatarFail": "No se pudo guardar el avatar",
+      "avatarUpdated": "Avatar actualizado",
+      "profileFail": "No se pudo guardar el perfil",
+      "profileUpdated": "Perfil actualizado",
+      "exported": "Datos exportados",
+      "exportFailed": "Exportación fallida",
+      "noEmail": "Sin correo en esta cuenta",
+      "resetFail": "No se pudo enviar el correo de restablecimiento",
+      "resetSent": "Correo de restablecimiento enviado",
+      "deleted": "Todos tus datos han sido eliminados",
+      "deleteFail": "No se pudieron eliminar los datos"
+    },
+    "validation": {
+      "required": "Requerido",
+      "max40": "Máx. 40 caracteres"
+    },
+    "avatar": {
+      "title": "Elige tu espíritu",
+      "desc": "Un símbolo de tu yo interior."
+    },
+    "guest": "invitado",
+    "aria": {
+      "changeAvatar": "Cambiar avatar"
+    },
+    "exportFileName": "exportacion-mind-sentinel"
+  },
+  "emergency": {
+    "title": "Apoyo de emergencia",
+    "subtitle": "Si estás en peligro inmediato, contacta con una persona real a través de las líneas siguientes. Este espacio te ayuda a respirar y mantenerte presente.",
+    "immediateHelp": "Ayuda inmediata",
+    "backToDashboard": "Volver al panel",
+    "placeholder": "Comparte lo que sientes...",
+    "openingMessage": "Estás en un espacio seguro. Estoy aquí para escuchar — sin prisa. ¿Qué está ocurriendo ahora?",
+    "supportive": {
+      "s1": "Te escucho, y estoy aquí. Respira despacio conmigo — no tienes que cargar con esto solo.",
+      "s2": "Gracias por contármelo. Lo que sientes tiene sentido. ¿Estás a salvo en este momento?",
+      "s3": "Me quedo aquí contigo. ¿Puedes describir una cosa de la habitación a tu alrededor?"
+    }
+  },
+  "history": {
+    "title": "Bóveda del historial",
+    "subtitle": "Navega por el tiempo para explorar tus conversaciones.",
+    "dragHint": "Arrastra · Desplaza · Toca para navegar el tiempo",
+    "allTime": "Todo el tiempo",
+    "selectedMoment": "Momento seleccionado",
+    "conversation": "conversación",
+    "conversations": "conversaciones",
+    "clear": "Limpiar",
+    "loadingMemories": "Cargando recuerdos...",
+    "noConversationsAt": "No hay conversaciones en este momento.",
+    "noMessagesYet": "Aún no hay mensajes.",
+    "selectToPreview": "Selecciona un momento para ver.",
+    "preview": "Vista previa",
+    "replay": "Repetir",
+    "openInChat": "Abrir en chat",
+    "shareMoment": "Compartir momento",
+    "searchMemories": "Buscar recuerdos...",
+    "noConversationsFound": "No se encontraron conversaciones.",
+    "reflection": "Reflexión",
+    "newSession": "Nueva sesión",
+    "groups": {
+      "today": "Hoy",
+      "yesterday": "Ayer",
+      "thisWeek": "Esta semana",
+      "older": "Más antiguo"
+    },
+    "replayUI": {
+      "selectToReplay": "Selecciona un momento para repetir.",
+      "loadingReplay": "Cargando repetición…",
+      "noMessages": "Sin mensajes para repetir.",
+      "play": "Repetir",
+      "pause": "Pausa",
+      "keyMoments": "Momentos clave"
+    },
+    "headerDateFull": "long",
+    "noConversation": "sesión",
+    "intensityPct": "intensidad {{pct}}%",
+    "readyToCarry": "sesión"
+  },
+  "insights": {
+    "title": "Perspectivas",
+    "subtitleShort": "Tus patrones emocionales en el tiempo",
+    "subtitle": "Tu observatorio emocional",
+    "moodTrend": "Tendencia de intensidad",
+    "spectrum": "Espectro emocional",
+    "weekly": "Ritmo semanal",
+    "cognitive": "Patrones cognitivos",
+    "noPatterns": "Aún no hay patrones detectados.",
+    "aiReflections": "Reflexiones generadas por IA",
+    "observatory": "Observatorio emocional",
+    "dominantPattern": "Patrón dominante",
+    "intensityShift": "Cambio de intensidad",
+    "stats": {
+      "sessions": "Sesiones",
+      "avgIntensity": "Intensidad media",
+      "activeDays": "Días activos"
+    },
+    "timeline": {
+      "title": "Línea temporal emocional",
+      "hint": "Pasa el ratón · Clic para abrir",
+      "footer": "Cada nodo es un momento de tu viaje emocional.",
+      "intensity": "intensidad"
+    },
+    "empty": {
+      "title": "Tu observatorio está despertando",
+      "desc": "A medida que reflexiones en sesiones, este espacio revelará patrones, ritmos y perspectivas suaves sobre tu mundo interior.",
+      "trends": "Tendencias del ánimo",
+      "weeklyRhythm": "Ritmo emocional semanal",
+      "ai": "Reflexiones de IA",
+      "cta": "Comienza tu primera sesión"
+    }
+  },
+  "breathing": {
+    "guidedBreathing": "Respiración guiada",
+    "findCalm": "Encuentra tu calma",
+    "intro": "Este ejercicio usa la técnica 4-2-6 para reducir la ansiedad y promover la relajación.",
+    "inhale4": "Inhala 4s",
+    "hold2": "Sostén 2s",
+    "exhale6": "Exhala 6s",
+    "begin": "Comenzar",
+    "endExercise": "Terminar",
+    "phases": {
+      "inhale": "Inhala",
+      "hold": "Sostén",
+      "exhale": "Exhala"
+    },
+    "cycle": "Ciclo {{num}}",
+    "close": "Cerrar",
+    "cycleAndPhase": "Ciclo {{num}} • {{phase}}"
+  },
+  "mood": {
+    "sessionDuration": "Duración de la sesión",
+    "moodTrend": "Tendencia del ánimo",
+    "improving": "Mejorando",
+    "challenging": "Difícil",
+    "steady": "Estable",
+    "intensityOverTime": "Intensidad en el tiempo",
+    "averageIntensity": "Intensidad media",
+    "breathingExercises": "Ejercicios de respiración",
+    "completed": "{{count}} completados"
+  },
+  "clinic": {
+    "sanctuaryAwaits": "Tu santuario psicológico te espera",
+    "enterClinic": "Entrar a la clínica",
+    "audioHint": "🔊 Haz clic para activar el audio inmersivo",
+    "welcomeTraveler": "Bienvenido, {{name}}",
+    "traveler": "viajero",
+    "scenes": {
+      "s1": "Acercándote a la clínica...",
+      "s2": "La puerta se abre lentamente...",
+      "s3": "Una luz cálida llena la sala...",
+      "s4": "Caminando hacia la consulta...",
+      "s5": "Tomando asiento...",
+      "s6": "La sesión está por comenzar..."
+    }
+  },
+  "interview": {
+    "title": "Evaluación inicial",
+    "intro": "Hola, soy el Dr. Sentinel. Me alegra que decidas dar este paso. Antes de empezar nuestras sesiones, me gustaría conocerte un poco mejor. Sin prisa — responde como te resulte cómodo.",
+    "firstQuestion": "Empecemos suavemente. ¿Cómo te has sentido emocionalmente las últimas semanas?",
+    "placeholder": "Comparte tus pensamientos...",
+    "starting": "Iniciando tu sesión...",
+    "fallback": "Aprecio que lo compartas. ¿Puedes contarme un poco más de lo que te ha estado rondando últimamente?",
+    "enableVoice": "Activar voz",
+    "disableVoice": "Desactivar voz"
+  },
+  "errors": {
+    "generic": "Algo salió mal",
+    "network": "Error de red",
+    "noPermission": "Permiso denegado"
+  },
+  "aria": {
+    "back": "Volver",
+    "openSessions": "Abrir sesiones",
+    "close": "Cerrar",
+    "sessions": "Sesiones"
+  },
+  "doctor": {
+    "title": "Portal del Doctor",
+    "subtitle": "Vista clínica de solo lectura",
+    "signInRequired": "Inicio de sesión requerido",
+    "accessDenied": "Acceso denegado",
+    "accessDeniedHint": "Necesitas el rol de doctor para acceder a este portal.",
+    "patients": "Pacientes",
+    "sessions": "sesiones",
+    "recentSessions": "Sesiones Recientes",
+    "noSessions": "Sin sesiones aún.",
+    "empty": "No hay pacientes para mostrar.",
+    "disclaimer": "Acceso de solo lectura. No se envían ediciones ni mensajes desde este portal.",
+    "stats": {
+      "patients": "Pacientes",
+      "activeSessions": "Sesiones Totales",
+      "readOnly": "Nivel de Acceso",
+      "readOnlyValue": "Solo lectura"
+    },
+    "review": {
+      "actions": "Acciones del doctor",
+      "timeline": "Cronología de revisiones",
+      "new": "Nueva revisión",
+      "submit": "Guardar revisión",
+      "created": "Revisión guardada",
+      "empty": "Sin revisiones, notas o alertas aún.",
+      "noSummary": "(sin resumen)",
+      "summaryPlaceholder": "Resumen clínico…",
+      "status": {
+        "pending": "Pendiente",
+        "in_review": "En revisión",
+        "closed": "Cerrada",
+        "escalated": "Escalada"
+      }
+    },
+    "notes": {
+      "new": "Añadir nota",
+      "add": "Añadir nota",
+      "added": "Nota añadida",
+      "placeholder": "Nota clínica privada…",
+      "patientVisible": "Visible para el paciente"
+    },
+    "crisis": {
+      "tab": "Cola de crisis",
+      "empty": "Sin alertas de crisis activas.",
+      "noReason": "(sin motivo)",
+      "acknowledge": "Reconocer",
+      "acked": "Alerta reconocida",
+      "resolve": "Resolver",
+      "resolved": "Alerta resuelta",
+      "openPatient": "Abrir paciente",
+      "raised": "Alerta creada",
+      "escalateHigh": "Escalar (alta)",
+      "escalateCritical": "Escalar (crítica)",
+      "severity": {
+        "low": "Baja",
+        "medium": "Media",
+        "high": "Alta",
+        "critical": "Crítica"
+      },
+      "source": {
+        "system": "Sistema",
+        "doctor": "Doctor",
+        "self_report": "Auto-reporte"
+      },
+      "status": {
+        "open": "Abierta",
+        "acknowledged": "Reconocida",
+        "resolved": "Resuelta"
+      },
+      "emptyHint": "No hay señales de crisis abiertas.",
+      "emptyTag": "Todo en calma"
+    },
+    "timeline": {
+      "review": "Revisión",
+      "note": "Nota",
+      "flag": "Alerta de crisis"
+    },
+    "content": {
+      "tab": "Contenido"
+    },
+    "tab": {
+      "dashboard": "Panel",
+      "insights": "Perspectivas",
+      "users": "Usuarios"
+    },
+    "searchPlaceholder": "Buscar pacientes por nombre, id o emoción…",
+    "noMatches": "Ningún paciente coincide con esta búsqueda.",
+    "dash": {
+      "active7d": "Activos (7 d)",
+      "activityParticipation": "Participación en actividades",
+      "crisisOpen": "Crisis abiertas",
+      "emotionalLandscape": "Paisaje emocional",
+      "engagement": "Compromiso",
+      "heuristicNote": "Indicador heurístico, no es un diagnóstico clínico.",
+      "live": {
+        "connecting": "Conectando…",
+        "stable": "En vivo · estable"
+      },
+      "recentSessions": "Sesiones recientes",
+      "totalPatients": "Pacientes totales",
+      "totalSessions": "Sesiones totales"
+    },
+    "insights": {
+      "pending": "Generando insights…",
+      "subtitle": "Patrones asistidos por IA en sesiones recientes.",
+      "title": "Perspectivas clínicas"
+    }
+  },
+  "voiceMode": {
+    "return": "Volver",
+    "title": "Modo voz",
+    "speaking": "Sentinel está hablando",
+    "listening": "Escuchando…",
+    "tapToSpeak": "Toca para hablar",
+    "stopListening": "Detener escucha",
+    "startListening": "Iniciar escucha",
+    "browserUnavailable": "El reconocimiento de voz no está disponible en este navegador.",
+    "you": "tú",
+    "sentinel": "sentinel"
+  },
+  "emergencyHotlines": {
+    "h1": {
+      "name": "Línea 988 de Suicidio y Crisis",
+      "detail": "Llama o envía mensaje al 988 (EE. UU.)"
+    },
+    "h2": {
+      "name": "Línea de texto de crisis",
+      "detail": "Envía HOME al 741741"
+    },
+    "h3": {
+      "name": "Líneas de ayuda internacionales",
+      "detail": "findahelpline.com"
+    }
+  },
+  "theme": {
+    "theme": "Tema",
+    "subtitle": "Púrpura neuronal · Oro cinemático · Perla clara",
+    "purple": "Tema púrpura",
+    "gold": "Tema dorado",
+    "light": "Tema claro",
+    "cycle": "Cambiar tema",
+    "switchToPurple": "Cambiar a tema púrpura",
+    "switchToGold": "Cambiar a tema dorado"
+  },
+  "diagnostics": {
+    "gate": {
+      "title": "Diagnóstico bloqueado",
+      "body": "Este panel solo está disponible en desarrollo o con ?debug=1."
+    },
+    "header": {
+      "eyebrow": "Plataforma de voz",
+      "title": "Diagnóstico y telemetría"
+    },
+    "tabs": {
+      "flow": "Test de flujo árabe",
+      "telemetry": "Telemetría"
+    },
+    "flowTest": {
+      "eyebrow": "Test integral",
+      "title": "Test de flujo de voz árabe",
+      "subtitle": "Graba, transcribe, genera y reproduce la frase árabe canónica.",
+      "phraseLabel": "Frase objetivo",
+      "run": "Ejecutar test",
+      "stop": "Detener",
+      "processing": "Procesando…",
+      "reset": "Reiniciar",
+      "copyJson": "Copiar JSON",
+      "exportJson": "Exportar",
+      "timeline": "Línea de etapas",
+      "latency": "Desglose de latencia",
+      "transcript": "Transcripción",
+      "similarity": "Similitud con el objetivo: {{pct}}%"
+    },
+    "verdict": {
+      "pending": "Pendiente",
+      "pass": "Aprobado",
+      "warn": "Advertencia",
+      "fail": "Fallo"
+    },
+    "stages": {
+      "recording": "Grabación",
+      "uploading": "Subiendo",
+      "stt": "Voz a texto",
+      "thinking": "Pensando",
+      "generation": "Generación del asistente",
+      "tts": "Texto a voz",
+      "waveform": "Forma de onda",
+      "autoplay": "Reproducción automática",
+      "complete": "Completo"
+    },
+    "detail": {
+      "recordingHint": "Diga la frase con claridad…",
+      "noTranscript": "Sin transcripción",
+      "autoplayBlocked": "El navegador bloqueó la reproducción"
+    },
+    "latency": {
+      "recording": "Grabación",
+      "upload": "Subida",
+      "stt": "STT",
+      "tts": "TTS",
+      "total": "Total",
+      "retries": "Reintentos"
+    },
+    "agg": {
+      "upload": "Subida media",
+      "stt": "STT medio",
+      "tts": "TTS medio",
+      "total": "Total medio",
+      "retries": "Reintentos",
+      "autoplay": "Autoplay OK"
+    },
+    "dash": {
+      "ringBuffer": "Búfer circular (últimos 200)",
+      "clear": "Limpiar",
+      "empty": "Sin eventos de telemetría todavía."
+    },
+    "filter": {
+      "all": "Todos",
+      "upload": "Subida",
+      "stt": "STT",
+      "tts": "TTS",
+      "autoplay": "Autoplay",
+      "actions": "Acciones",
+      "retries": "Reintentos",
+      "errors": "Errores",
+      "replay": "Replay"
+    },
+    "toast": {
+      "failed": "Test fallido: {{reason}}",
+      "copied": "Copiado",
+      "cleared": "Búfer limpiado"
+    }
+  },
+  "voiceStatus": {
+    "recording": "Grabando",
+    "uploading": "Subiendo",
+    "transcribing": "Transcribiendo",
+    "thinking": "Pensando",
+    "generating": "Generando voz",
+    "ready": "Listo",
+    "error": "Error de canalización"
+  },
+  "activities": {
+    "title": "Actividades",
+    "subtitle": "Ejercicios y herramientas guiadas",
+    "empty": "Aún no hay actividades.",
+    "start": "Comenzar",
+    "completedToast": "Actividad completada",
+    "kind": {
+      "all": "Todas",
+      "cbt_flow": "Flujo CBT",
+      "image_interpretation": "Interpretación de imagen",
+      "educational_video": "Vídeo educativo",
+      "spot_difference": "Encuentra la diferencia"
+    },
+    "runner": {
+      "finish": "Finalizar",
+      "yourInterpretation": "Tu interpretación…",
+      "watched": "Vídeo visto.",
+      "pleaseWatch": "Por favor mira hasta el final.",
+      "autoplay": "Reproducir siguiente automáticamente",
+      "related": "Relacionados",
+      "continueWatching": "Continuar viendo",
+      "playlist": "Lista de reproducción",
+      "spotProgress": "Encontradas {{found}} de {{total}}",
+      "reset": "Restablecer"
+    },
+    "manage": {
+      "newTitle": "Crear nueva actividad",
+      "kind": "Tipo",
+      "assetTitle": "Título",
+      "description": "Descripción",
+      "contentJson": "Contenido (JSON)",
+      "invalidJson": "JSON inválido",
+      "created": "Actividad creada",
+      "existing": "Actividades existentes",
+      "empty": "Aún no hay actividades.",
+      "publish": "Publicar",
+      "unpublish": "Despublicar",
+      "archive": "Archivar",
+      "published": "Publicada",
+      "draft": "Borrador",
+      "archived": "Archivada",
+      "editing": "Editando"
+    },
+    "ai": {
+      "disclaimer": "Las sugerencias de IA son orientativas y pueden no ser exactas.",
+      "hintPh": "Pista opcional para guiar a la IA…",
+      "suggestionOnly": "Solo sugerencia",
+      "title": "Asistente IA"
+    },
+    "builder": {
+      "video": {
+        "descPh": "Descripción breve…",
+        "descriptionPh": "Describe esta lista…",
+        "empty": "Aún no hay listas.",
+        "goalPh": "¿Qué debe llevarse el paciente?",
+        "namePh": "Nombre de la lista",
+        "playlists": "Listas de reproducción",
+        "removePlaylist": "Eliminar lista",
+        "selectOrCreate": "Selecciona una lista o crea una nueva.",
+        "tagsPh": "etiqueta1, etiqueta2…",
+        "titlePh": "Título del vídeo",
+        "upload": "Subir vídeo"
+      }
+    },
+    "difficulty": {
+      "challenging": "Desafiante",
+      "gentle": "Suave",
+      "moderate": "Moderado"
+    }
+  },
+  "session": {
+    "closure": {
+      "hope": "Lleva contigo esta calma."
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind Sentinel</title>
+    <meta name="description" content="Mind Sentinel — AI-supported mental wellness companion.">
+    <meta name="author" content="Mind Sentinel" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+    <!-- TODO: Update og:title to match your application name -->
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/394faac3-890c-4a6f-9056-2b22f3dd0c01/id-preview-b747432d--4ea01853-4991-47d8-8211-ea69814a9e03.lovable.app-1773044174530.png">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/394faac3-890c-4a6f-9056-2b22f3dd0c01/id-preview-b747432d--4ea01853-4991-47d8-8211-ea69814a9e03.lovable.app-1773044174530.png">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Mind Sentinel">
+  <meta name="twitter:title" content="Mind Sentinel">
+  <meta property="og:description" content="Mind Sentinel — AI-supported mental wellness companion.">
+  <meta name="twitter:description" content="Mind Sentinel — AI-supported mental wellness companion.">
+</head>
+
+  <body>
+    <script>
+      // Flicker-free theme boot. Default = purple. Must run before React mounts.
+      (function () {
+        try {
+          var t = localStorage.getItem('mind-sentinel-theme');
+          if (t !== 'gold' && t !== 'purple' && t !== 'light') t = 'purple';
+          document.documentElement.setAttribute('data-theme', t);
+          document.documentElement.style.colorScheme = t === 'light' ? 'light' : 'dark';
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'purple');
+          document.documentElement.style.colorScheme = 'dark';
+        }
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

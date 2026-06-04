@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+      - name: Backend integrity lock
+        run: node scripts/check-backend-lock.mjs
+      - name: Verify locale parity
+        id: locale_parity
+        run: node scripts/check-locale-parity.mjs
+      - name: Upload locale parity report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: locale-parity-report
+          path: artifacts/locale-parity-report.json
+          if-no-files-found: warn
+      - name: Tests
+        run: bun run test

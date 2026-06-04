@@ -1,0 +1,1135 @@
+{
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "send": "إرسال",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "saving": "جارٍ الحفظ…",
+    "saveChanges": "حفظ التغييرات",
+    "unsavedChanges": "تغييرات غير محفوظة",
+    "back": "رجوع",
+    "close": "إغلاق",
+    "done": "تم",
+    "retry": "إعادة المحاولة",
+    "delete": "حذف",
+    "copy": "نسخ",
+    "copied": "تم النسخ",
+    "share": "مشاركة",
+    "reply": "رد",
+    "regenerate": "إعادة التوليد",
+    "continue": "متابعة",
+    "all": "الكل",
+    "newSession": "جلسة جديدة",
+    "newChat": "محادثة جديدة",
+    "signOut": "تسجيل الخروج",
+    "search": "بحث",
+    "open": "فتح",
+    "select": "اختر…",
+    "yes": "نعم",
+    "no": "لا",
+    "skip": "تخطّي",
+    "loadingShort": "جارٍ التحميل…",
+    "somethingWrong": "حدث خطأ ما",
+    "untitled": "بدون عنوان",
+    "anonymous": "مجهول",
+    "guest": "ضيف",
+    "you": "أنت",
+    "more": "المزيد",
+    "filters": "الفلاتر",
+    "pause": "إيقاف مؤقت",
+    "resume": "استئناف",
+    "discard": "تجاهل"
+  },
+  "nav": {
+    "dashboard": "اللوحة الرئيسية",
+    "insights": "الرؤى",
+    "history": "السجل",
+    "notes": "ملاحظات المعالج",
+    "voice": "الصوت",
+    "settings": "الإعدادات",
+    "profile": "الملف الشخصي",
+    "emergency": "الطوارئ",
+    "startSession": "بدء جلسة",
+    "activities": "الأنشطة",
+    "doctor": "الأخصائي"
+  },
+  "a11y": {
+    "skipToMain": "انتقل إلى المحتوى الرئيسي"
+  },
+  "footer": {
+    "tagline": "مايند سنتينل · رفيق هادئ لعالمك الداخلي"
+  },
+  "brand": {
+    "title": "مايند سنتينل",
+    "tagline": "منصة التحليل النفسي بالذكاء الاصطناعي"
+  },
+  "login": {
+    "onboarding": {
+      "progress": "تقدم التسجيل",
+      "avatar": "الصورة",
+      "identity": "الهوية",
+      "profile": "الملف",
+      "avatarHint": "اختر صورة رمزية — يمكنك البقاء مجهولاً أو التسجيل بالبريد الإلكتروني."
+    },
+    "chooseAvatar": "اختر صورتك الرمزية",
+    "resumeSession": "استئناف الجلسة",
+    "identityMode": "وضع الهوية",
+    "anonymous": "مجهول",
+    "anonymousDesc": "حافظ على خصوصيتك بشخصية افتراضية",
+    "realIdentity": "هوية حقيقية",
+    "realIdentityDesc": "أنشئ حساباً",
+    "anonymousProfile": "ملف مجهول",
+    "signIn": "تسجيل الدخول",
+    "createAccount": "إنشاء حساب",
+    "continuePrev": "متابعة الجلسة السابقة",
+    "creating": "جارٍ الإنشاء…",
+    "loading": "جارٍ التحميل…",
+    "enter": "دخول",
+    "resume": "استئناف",
+    "noAccount": "ليس لديك حساب؟ سجّل الآن",
+    "hasAccount": "لديك حساب بالفعل؟ سجّل الدخول",
+    "fields": {
+      "nickname": "اللقب",
+      "nicknamePh": "اختر لقباً...",
+      "age": "العمر",
+      "agePh": "عمرك",
+      "nicknameReason": "لماذا هذا اللقب؟",
+      "nicknameReasonPh": "أخبرنا لماذا اخترت هذا الاسم...",
+      "email": "البريد الإلكتروني",
+      "emailPh": "your@email.com",
+      "password": "كلمة المرور",
+      "passwordPh": "••••••••"
+    },
+    "errors": {
+      "anonFailed": "تعذّر إنشاء جلسة مجهولة",
+      "authFailed": "فشلت المصادقة",
+      "loginFailed": "فشل تسجيل الدخول",
+      "emailNotConfirmed": "يرجى تأكيد بريدك أولاً — تحقق من البريد للحصول على رابط التفعيل.",
+      "invalidCreds": "بريد أو كلمة مرور غير صحيحة.",
+      "userExists": "يوجد حساب بهذا البريد بالفعل. حاول تسجيل الدخول.",
+      "weakPassword": "كلمة المرور ضعيفة. استخدم 6 أحرف على الأقل.",
+      "rateLimit": "محاولات كثيرة. يرجى الانتظار قليلاً.",
+      "redirectNotAllowed": "عنوان التطبيق غير مسموح لتسجيل الدخول. أضفه في Supabase → Authentication → Redirect URLs."
+    },
+    "recovery": {
+      "preparing": "رمز الاسترداد يظهر في النافذة أعلاه. احفظه قبل المتابعة.",
+      "errors": {
+        "invalid_format": "صيغة رمز الاسترداد غير صالحة. أدخل الرمز الكامل من نسختك المحفوظة.",
+        "not_found": "لا يوجد حساب مطابق لهذا الرمز. تحقق من الرمز وحاول مرة أخرى.",
+        "already_used": "تم استخدام رمز الاسترداد هذا مسبقاً ولا يمكن إعادة استخدامه.",
+        "restore_failed": "فشل الاسترداد. يرجى المحاولة مرة أخرى.",
+        "database_error": "تعذر التحقق من رمز الاسترداد. تحقق من الاتصال وحاول مرة أخرى."
+      }
+    },
+    "doctorAccess": {
+      "title": "دخول الأطباء",
+      "subtitle": "بوابة آمنة للأطباء المرخصين · متابعة المرضى، مراجعة الأزمات، رؤى طويلة المدى"
+    },
+    "confirm": {
+      "checkInbox": "تحقق من بريدك",
+      "confirmSent": "أرسلنا رابط تأكيد إلى {email}. اضغط عليه لتفعيل حسابك.",
+      "resend": "إعادة الإرسال",
+      "resent": "تم إرسال رسالة التأكيد مجدداً",
+      "backToLogin": "رجوع",
+      "pendingApplied": "مرحباً بعودتك — ملفك جاهز."
+    },
+    "orContinueWith": "أو تابع باستخدام"
+  },
+  "gender": {
+    "label": "اختر جنسك",
+    "male": "ذكر",
+    "female": "أنثى"
+  },
+  "dashboard": {
+    "morning": "صباح الخير",
+    "afternoon": "مساء الخير",
+    "evening": "مساء الخير",
+    "welcomeTitle": "مرحباً بك في",
+    "sanctuary": "ملاذك",
+    "welcomeDesc": "مساحة هادئة للتأمل وفهم مشاعرك والنمو. عندما تكون مستعداً، ابدأ جلسة جديدة — د. سنتينل هنا للاستماع.",
+    "viewInsights": "عرض الرؤى",
+    "totalSessions": "إجمالي الجلسات",
+    "currentMood": "المزاج الحالي",
+    "avgIntensity": "متوسط الشدة",
+    "quickActions": "إجراءات سريعة",
+    "newSessionDesc": "ابدأ الحديث",
+    "history": "السجل",
+    "historyDesc": "الجلسات السابقة",
+    "breathing": "التنفس",
+    "breathingDesc": "تقنية 4-7-8",
+    "emergencyDesc": "دعم الأزمات",
+    "recentSessions": "الجلسات الأخيرة",
+    "viewAll": "عرض الكل ←",
+    "noSessions": "لا توجد جلسات بعد — ابدأ جلستك الأولى.",
+    "beginNow": "ابدأ الآن",
+    "scroll": "مرّر",
+    "heroLine1": "ملاذٌ",
+    "heroLine2": "لعقلك.",
+    "heroDesc": "جلسات علاجية سينمائية موجَّهة بالذكاء الاصطناعي تساعدك على فهم مشاعرك وفكّ أنماطك وإيجاد الهدوء — نَفَساً تلو الآخر.",
+    "startSessionBtn": "بدء جلسة",
+    "whatIs": "ما هو مايند سنتينل",
+    "therapy": "العلاج،",
+    "reimagined": "بمفهوم جديد.",
+    "pillarsDesc": "ست ركائز تعمل معاً لتجعل كل جلسة نقطة تحوّل.",
+    "journey": "الرحلة",
+    "fromFirst": "من أول كلمة إلى",
+    "lastingChange": "تغيير دائم.",
+    "step": "خطوة",
+    "yourSanctuary": "ملاذك",
+    "snapshotLine1": "لمحة عن",
+    "snapshotLine2": "عالمك الداخلي.",
+    "calm": "هدوء"
+  },
+  "mindJourney": {
+    "badge": "مميز · رحلة العقل",
+    "title": "رحلتك",
+    "titleAccent": "النفسية",
+    "subtitle": "شاهد قصة نموك النفسي — فصول، مواسم، ومحطات من تأملاتك ودرجاتك.",
+    "dailyScores": "العافية العاطفية اليومية",
+    "wellnessScore": "العافية",
+    "empty": "أكمل أول جلسة تأمل لفتح خريطة رحلتك.",
+    "analytics": {
+      "moodImprovement": "تحسن المزاج",
+      "moodHint": "تغير درجة العافية اليومية (الفترة الأخيرة مقابل السابقة).",
+      "anxietyReduction": "خفض القلق",
+      "anxietyHint": "انخفاض شدة الجلسات المرتبطة بالقلق مع الوقت.",
+      "stressTrend": "اتجاه التوتر",
+      "stressHint": "مستمد من مسار العافية لديك.",
+      "stress": {
+        "improving": "يتحسن",
+        "stable": "مستقر",
+        "rising": "مرتفع"
+      },
+      "consistency": "درجة الانتظام",
+      "consistencyHint": "بناءً على أيام التأمل وسلسلتك الحالية {{streak}} أيام."
+    },
+    "insights": {
+      "label": "رؤى الرحلة",
+      "improvements": "ما يتحسن",
+      "regressions": "انتبه له",
+      "recommendations": "الخطوات التالية"
+    },
+    "timeline": {
+      "aria": "الخط الزمني للرحلة النفسية",
+      "empty": "لا أحداث بعد.",
+      "showing": "عرض {{visible}} من {{total}} (مرر للمزيد)"
+    },
+    "event": {
+      "daily_score": "درجة يومية",
+      "milestone": "محطة",
+      "session": "جلسة",
+      "activity": "نشاط",
+      "moment": "لحظة مهمة",
+      "streak": "سلسلة"
+    },
+    "story": {
+      "viewTitle": "قصتك",
+      "viewSubtitle": "من التحديات المبكرة نحو من أنت اليوم — كل سطر من جلساتك ودرجاتك.",
+      "chapter": "الفصل {{n}}",
+      "avgWellness": "متوسط العافية في هذا الفصل: {{score}}/100",
+      "growth": {
+        "label": "درجة النمو الشخصي",
+        "thisMonth": "هذا الشهر",
+        "sinceStart": "منذ أول جلسة"
+      },
+      "beforeNow": {
+        "title": "قبل و الآن",
+        "firstWeek": "البداية",
+        "today": "أنت اليوم",
+        "stress": "التوتر",
+        "mood": "المزاج"
+      },
+      "highlights": {
+        "title": "أبرز محطات الرحلة"
+      },
+      "seasons": {
+        "title": "المواسم العاطفية"
+      },
+      "future": {
+        "title": "خطوتك التالية",
+        "subtitle": "نقاط قوة ومخاطر وإجراءات من تحليلاتك — دون تخمين.",
+        "strengths": "نقاط القوة",
+        "risks": "المخاطر",
+        "actions": "إجراءات مقترحة"
+      }
+    },
+    "futureSelf": {
+      "badge": "رحلة العقل V3",
+      "title": "قابل نفسك المستقبلية",
+      "subtitle": "توقعات حتمية من عاداتك — ثلاث مسارات، توأم رقمي، وإلى أين قد تتجه قصتك.",
+      "trend": {
+        "rising": "صاعد",
+        "stable": "مستقر",
+        "declining": "متراجع"
+      },
+      "paths": {
+        "title": "محاكاة المسارات المستقبلية",
+        "horizon": "{{days}} يوماً",
+        "emotional": "الاتجاه العاطفي",
+        "consistency": "الانتظام",
+        "resilience": "المرونة"
+      },
+      "cards": {
+        "title": "أنت بعد {{days}} يوماً",
+        "confidence": "الثقة",
+        "wellness": "العافية المتوقعة"
+      },
+      "twin": {
+        "label": "توأمك الرقمي النفسي",
+        "strengths": "نقاط القوة",
+        "patterns": "أنماط عاطفية",
+        "blindSpots": "بقع عمياء",
+        "opportunities": "فرص النمو"
+      },
+      "lifeChapters": {
+        "title": "فصول الحياة — وثائقيتك"
+      },
+      "impact": {
+        "title": "ما الذي غيّرك أكثر؟"
+      },
+      "forecast": {
+        "title": "توقعات عاطفية",
+        "past": "الماضي",
+        "present": "الحاضر",
+        "future": "المستقبل"
+      }
+    },
+    "advanced": {
+      "weather": {
+        "label": "توقعات الطقس النفسي",
+        "stable": "مستقر",
+        "improving": "يتحسن",
+        "storm_incoming": "عاصفة قادمة",
+        "recovery_phase": "مرحلة التعافي"
+      },
+      "risk": {
+        "badge": "طبقة تنبؤية",
+        "title": "إشارات الإنذار المبكر",
+        "subtitle": "يكشف التدهور العاطفي من الدرجات والإيقاع والمشاركة — قبل أن يظهر على السطح.",
+        "burnout": "خطر الإرهاق",
+        "anxiety": "تصعيد القلق",
+        "isolation": "خطر العزلة",
+        "recovery": "احتمال التعافي",
+        "warningsTitle": "إشارات الإنذار المبكر",
+        "confidence": "ثقة",
+        "level": {
+          "low": "منخفض",
+          "moderate": "متوسط",
+          "high": "مرتفع"
+        }
+      },
+      "aiTwin": {
+        "badge": "ملف نفسي",
+        "title": "توأمك بالذكاء الاصطناعي",
+        "confidence": "ثقة الملف",
+        "triggers": "محفزات عاطفية",
+        "strengths": "قوة التعافي",
+        "weaknesses": "نقاط ضعف خفية",
+        "growth": "فرص النمو",
+        "evidence": "أدلة",
+        "changes": "تغيرات مع الوقت"
+      },
+      "time": {
+        "badge": "آلة الزمن العاطفية",
+        "title": "الماضي · الحاضر · المستقبل",
+        "tab": {
+          "past": "ذات الماضي",
+          "present": "ذات الحاضر",
+          "future": "ذات المستقبل"
+        },
+        "emotional": "الدرجة العاطفية",
+        "resilience": "المرونة",
+        "consistency": "الانتظام",
+        "recovery": "قدرة التعافي",
+        "challenges": "تحديات رئيسية",
+        "memories": "ذكريات المحطات"
+      }
+    },
+    "crisis": {
+      "badge": "منع الأزمات",
+      "title": "طبقة الوقاية النفسية",
+      "subtitle": "يكشف أنماط التحذير قبل أن يصبح التدهور حاداً — من درجاتك وإيقاعك ومشاركتك فقط.",
+      "warningsTitle": "إنذارات مبكرة",
+      "immediate": "إجراء فوري",
+      "hours24": "الـ 24 ساعة القادمة",
+      "days7": "خطة 7 أيام",
+      "nothingChanges": "إن لم يتغير شيء",
+      "actionsFollowed": "إن اتُبعت الإجراءات الموصى بها",
+      "delta": "فجوة عافية محتملة: {{delta}} نقطة خلال ~30 يوماً",
+      "risk": {
+        "burnout": "إرهاق",
+        "anxiety": "قلق",
+        "depression": "اكتئاب",
+        "withdrawal": "انسحاب",
+        "collapse": "انهيار التعافي"
+      },
+      "trend": {
+        "improving": "اتجاه متحسن",
+        "stable": "اتجاه مستقر",
+        "worsening": "اتجاه متدهور"
+      }
+    },
+    "memory": {
+      "badge": "الذاكرة العلاجية",
+      "title": "الذاكرة العلاجية بالذكاء الاصطناعي",
+      "confidence": "ثقة الذاكرة",
+      "themes": "مواضيع عاطفية",
+      "triggers": "محفزات متكررة",
+      "growth": "مجالات النمو الشخصي",
+      "goals": "أهداف طويلة المدى",
+      "keepsAppearing": "ما يتكرر في رحلتك",
+      "improved": "ما تحسّن مع الوقت"
+    },
+    "therapistDemo": {
+      "badge": "عرض توضيحي · ليست بيانات سريرية حية",
+      "title": "لوحة ذكاء المعالج",
+      "subtitle": "يوضح كيف يمكن للأخصائيين مراقبة المخاطر والاتجاهات — وضع العرض فقط.",
+      "low": "خطر منخفض",
+      "medium": "خطر متوسط",
+      "high": "خطر مرتفع",
+      "patients": "المرضى",
+      "risk": "خطر",
+      "lastSession": "آخر جلسة",
+      "moodTrend": "اتجاه المزاج",
+      "burnout": "إرهاق",
+      "anxiety": "قلق",
+      "aiSummary": "ملخص الذكاء الاصطناعي",
+      "interventions": "اقتراحات التدخل",
+      "timeline": "الخط الزمني للمريض"
+    }
+  },
+  "features": {
+    "emotion": {
+      "title": "كشف المشاعر بالذكاء الاصطناعي",
+      "desc": "تحليل فوري للنبرة واللغة والنمط ليعكس ما تشعر به."
+    },
+    "voice": {
+      "title": "العلاج الصوتي",
+      "desc": "تحدّث بطبيعية. د. سنتينل ينصت بدفء وحضور غير متعجِّل."
+    },
+    "crisis": {
+      "title": "كشف الأزمات",
+      "desc": "مراقبة هادئة لإشارات الضائقة — وتقديم مساعدة حقيقية عند الحاجة."
+    },
+    "analytics": {
+      "title": "تحليلات عاطفية",
+      "desc": "شاهد طقسك الداخلي عبر الزمن، برسوم تحترم خصوصيتك."
+    },
+    "recovery": {
+      "title": "متابعة التعافي",
+      "desc": "محطات شخصية تحتفي بكل تقدّم صغير وحقيقي."
+    },
+    "companion": {
+      "title": "جلسات رفيق ذكي",
+      "desc": "حضور يتذكرك بين الزيارات، دون أحكام."
+    }
+  },
+  "timeline": {
+    "intake": {
+      "title": "التقييم الأولي",
+      "desc": "استقبال لطيف — قصتك، إيقاعك، حدودك."
+    },
+    "session": {
+      "title": "جلسة الذكاء الاصطناعي",
+      "desc": "تحدّث بحرية مع د. سنتينل في فضاء آمن وغامر."
+    },
+    "analysis": {
+      "title": "التحليل العاطفي",
+      "desc": "أنماط وتشوّهات وشدّة تظهر في الوقت الحقيقي."
+    },
+    "insights": {
+      "title": "توليد الرؤى",
+      "desc": "ملامحك العاطفية مرئية عبر جلساتك."
+    },
+    "tracking": {
+      "title": "متابعة التعافي",
+      "desc": "محطات تنمو معك. تقدّم هادئ صادق."
+    }
+  },
+  "chat": {
+    "placeholder": "شارك ما يدور في ذهنك...",
+    "thinking": "د. سنتينل يفكر",
+    "memoryActive": "الذاكرة نشطة",
+    "highDistress": "تم اكتشاف ضائقة عالية. لست وحدك — الدعم الإضافي هنا.",
+    "talkToSpecialist": "تحدث مع متخصص حقيقي",
+    "openEmergency": "فتح الدعم الطارئ ←",
+    "uploadComing": "رفع الملفات قريباً",
+    "threads": "المحادثات",
+    "currentChat": "المحادثة الحالية",
+    "drSentinel": "د. سنتينل",
+    "reflection": "تأمّل",
+    "dropFiles": "أفلت الملفات للإرفاق",
+    "inputHint": "Enter للإرسال · Shift+Enter لسطر جديد · أفلت أو الصق الملفات للإرفاق",
+    "attach": "إرفاق ملف",
+    "uploading": "جارٍ الرفع",
+    "ready": "جاهز",
+    "uploadFailed": "فشل الرفع",
+    "remove": "إزالة المرفق",
+    "scrollToBottom": "النزول لأسفل",
+    "newMessage": "رسالة جديدة",
+    "newMessages": "رسائل جديدة",
+    "backToDashboard": "العودة إلى اللوحة",
+    "breathingExercise": "تمرين تنفس",
+    "insightsPanel": "الرؤى",
+    "moodPanel": "المزاج",
+    "currentState": "الحالة الحالية",
+    "intensity": "الشدة",
+    "patterns": "الأنماط",
+    "recommendations": "التوصيات",
+    "startAnalysis": "أرسل رسالة لبدء التحليل العاطفي.",
+    "searchSessions": "ابحث في الجلسات...",
+    "openSessions": "فتح الجلسات",
+    "sessionsTitle": "الجلسات",
+    "noConversations": "ستظهر محادثاتك هنا",
+    "noMatches": "لا توجد نتائج",
+    "newConversation": "محادثة جديدة",
+    "today": "اليوم",
+    "yesterday": "الأمس",
+    "thisWeek": "هذا الأسبوع",
+    "older": "أقدم",
+    "copyMessage": "نسخ الرسالة",
+    "regenerateResponse": "إعادة توليد الرد",
+    "deleteMessage": "حذف الرسالة",
+    "shareMessage": "مشاركة الرسالة",
+    "replyTo": "رد",
+    "like": "مفيد",
+    "dislike": "غير مفيد",
+    "toasts": {
+      "copyFailed": "فشل النسخ",
+      "signInToUpload": "يرجى تسجيل الدخول لرفع الملفات",
+      "unsupported": "غير مدعوم: {{name}}",
+      "tooLarge": "{{name}} يتجاوز 20 ميغابايت",
+      "uploadFailedToast": "فشل رفع الصوت",
+      "aiConnectFail": "تعذّر الاتصال بالذكاء الاصطناعي",
+      "ttsFailedToast": "تعذّر الرد الصوتي"
+    },
+    "reflectionPrompts": {
+      "p1": "خذ لحظة لتلاحظ شعورك الآن. هل تغيّر شيء منذ بدأنا؟",
+      "p2": "ما الشيء الذي تودّ أن تأخذه معك من جلسة اليوم؟",
+      "p3": "لنتوقّف لحظة. ما تقوم به هنا مهم.",
+      "p4": "هل تودّ تجربة تمرين تأريض قصير؟ ركّز على ٥ أشياء حولك."
+    },
+    "breatheAction": "تنفّس",
+    "greeting": {
+      "welcomeBack": "أهلاً بعودتك{{name}}. سعيد برؤيتك مجدّداً. أتذكّر محادثاتنا السابقة. كيف كنت منذ آخر لقاء؟",
+      "first": "مرحباً{{name}}. أنت الآن في مساحة آمنة. أنا هنا للإصغاء ومساعدتك على فهم مشاعرك. شارك ما يدور في ذهنك بحرّية — لا أحكام هنا."
+    },
+    "voiceGenerating": "جارٍ توليد الرد الصوتي…",
+    "repliedTo": "الرد على رسالة",
+    "voiceUploading": "جارٍ إرسال الصوت…",
+    "loadOlder": "تحميل الأقدم",
+    "expandChats": "توسيع المحادثات",
+    "collapseChats": "طي المحادثات",
+    "newChatInSession": "محادثة جديدة في هذه الجلسة",
+    "noChatsYet": "لا توجد محادثات بعد",
+    "untitledChat": "محادثة بدون عنوان",
+    "renameChat": "إعادة تسمية المحادثة",
+    "deleteChat": "حذف المحادثة",
+    "confirmDeleteChat": "حذف هذه المحادثة؟ ستُحذف الرسائل الموجودة فيها.",
+    "arrival": "الدكتور سنتينل حاضر.",
+    "arriving": "يصل…"
+  },
+  "lightbox": {
+    "openNewTab": "فتح في تبويب جديد",
+    "close": "إغلاق"
+  },
+  "voice": {
+    "holdToRecord": "اضغط مطوّلاً للتسجيل (انقر للبدء، انقر مجدّداً للإيقاف)",
+    "releaseToSend": "أفلت للإرسال",
+    "cancelRecording": "إلغاء",
+    "sendVoice": "إرسال رسالة صوتية",
+    "holdLonger": "أبقِ ضاغطاً قليلاً للتسجيل.",
+    "micUnavailable": "الميكروفون غير متاح. يرجى منح الإذن وإعادة المحاولة.",
+    "playing": "تشغيل",
+    "pause": "إيقاف مؤقت",
+    "play": "تشغيل",
+    "generatingVoice": "جارٍ توليد الصوت",
+    "voiceMessage": "[رسالة صوتية]",
+    "tapToSpeak": "انقر للتحدث",
+    "listening": "أنصت…",
+    "sentinelSpeaking": "سنتينل يتحدث",
+    "voiceMode": "وضع الصوت",
+    "return": "رجوع",
+    "stopListening": "إيقاف الإصغاء",
+    "startListening": "بدء الإصغاء",
+    "browserUnavailable": "التعرّف على الكلام غير متاح في هذا المتصفح.",
+    "you": "أنت",
+    "sentinel": "سنتينل",
+    "stopVoiceInput": "إيقاف الإصغاء",
+    "startVoiceInput": "بدء الإدخال الصوتي",
+    "replayVoice": "إعادة تشغيل الصوت",
+    "playbackSpeed": "سرعة التشغيل",
+    "assistantVoice": "صوت المساعد"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "subtitle": "خصص تجربتك",
+    "sound": "الصوت",
+    "audio": "الصوت",
+    "voice": "الصوت",
+    "motion": "الحركة والأجواء",
+    "masterVolume": "الصوت الرئيسي",
+    "aiBehavior": "سلوك الذكاء الاصطناعي",
+    "language": "اللغة",
+    "languageDesc": "اختر لغتك المفضلة",
+    "privacy": "الخصوصية والبيانات",
+    "exportData": "تصدير بياناتي",
+    "deleteAll": "حذف جميع الجلسات",
+    "account": "الحساب",
+    "tones": {
+      "friendly": "ودّي",
+      "friendlyDesc": "دافئ ومحادثاتي",
+      "analytical": "تحليلي",
+      "analyticalDesc": "تأمّلي يركّز على الأنماط",
+      "clinical": "إكلينيكي",
+      "clinicalDesc": "احترافي ودقيق"
+    },
+    "motionLevels": {
+      "full": "كامل",
+      "fullDesc": "حركة سينمائية",
+      "reduced": "مخفّف",
+      "reducedDesc": "انتقالات هادئة",
+      "minimal": "أدنى",
+      "minimalDesc": "إمكانية الوصول أولاً"
+    },
+    "streamingResponses": "ردود متدفّقة",
+    "streamingDesc": "بثّ ردود الذكاء الاصطناعي حرفاً بحرف",
+    "voiceReplies": "ردود صوتية",
+    "voiceRepliesDesc": "نطق ردود الذكاء الاصطناعي بصوت عالٍ",
+    "speakingSpeed": "سرعة الكلام",
+    "testClick": "اختبار النقر",
+    "testChime": "اختبار النغمة",
+    "toasts": {
+      "exported": "تم تصدير البيانات",
+      "exportFailed": "فشل التصدير",
+      "deleted": "تم حذف البيانات",
+      "toneSet": "نبرة الذكاء الاصطناعي: {{tone}}",
+      "motionSet": "الحركة: {{level}}",
+      "motionFail": "تعذّر حفظ تفضيل الحركة"
+    },
+    "confirmDelete": "حذف جميع جلساتك ورسائلك؟ لا يمكن التراجع.",
+    "masterVolumeLabel": "مستوى الصوت الرئيسي",
+    "speakingSpeedLabel": "سرعة الكلام · {{rate}}x",
+    "appearance": "المظهر"
+  },
+  "profile": {
+    "title": "الملف الشخصي",
+    "subtitle": "هويتك العاطفية مع الذكاء الاصطناعي",
+    "sanctuaryIdentity": "هوية الملاذ",
+    "change": "تغيير",
+    "stats": {
+      "sessions": "الجلسات",
+      "mood": "المزاج",
+      "since": "منذ"
+    },
+    "editable": "المعلومات القابلة للتعديل",
+    "displayName": "الاسم الظاهر",
+    "ageLabel": "العمر",
+    "genderLabel": "الجنس",
+    "emailLabel": "البريد الإلكتروني",
+    "accountPrivacy": "الحساب والخصوصية",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "exportMyData": "تصدير بياناتي",
+    "exporting": "جارٍ التصدير…",
+    "signOutAction": "تسجيل الخروج",
+    "deleteAllMyData": "حذف جميع بياناتي",
+    "confirmDeleteTitle": "حذف جميع بياناتك؟",
+    "confirmDeleteDesc": "سيؤدي ذلك إلى حذف جلساتك ورسائلك وتاريخك العاطفي بشكل دائم. سيبقى حسابك. لا يمكن التراجع.",
+    "confirmDeleteAction": "نعم، احذف",
+    "deleting": "جارٍ الحذف…",
+    "toasts": {
+      "avatarFail": "تعذّر حفظ الصورة الرمزية",
+      "avatarUpdated": "تم تحديث الصورة الرمزية",
+      "profileFail": "فشل حفظ الملف الشخصي",
+      "profileUpdated": "تم تحديث الملف الشخصي",
+      "exported": "تم تصدير البيانات",
+      "exportFailed": "فشل التصدير",
+      "noEmail": "لا يوجد بريد إلكتروني لهذا الحساب",
+      "resetFail": "تعذّر إرسال بريد إعادة التعيين",
+      "resetSent": "تم إرسال بريد إعادة التعيين",
+      "deleted": "تمت إزالة جميع بياناتك",
+      "deleteFail": "تعذّر حذف البيانات"
+    },
+    "validation": {
+      "required": "مطلوب",
+      "max40": "حد أقصى ٤٠ حرفاً"
+    },
+    "avatar": {
+      "title": "اختر روحك",
+      "desc": "رمز لذاتك الداخلية."
+    },
+    "guest": "ضيف",
+    "aria": {
+      "changeAvatar": "تغيير الصورة الرمزية"
+    },
+    "exportFileName": "تصدير-مايند-سنتينل"
+  },
+  "emergency": {
+    "title": "الدعم الطارئ",
+    "subtitle": "إذا كنت في خطر فوري، يرجى التواصل مع شخص حقيقي عبر الخطوط الساخنة أدناه. هذه المساحة هنا لمساعدتك على التنفس والبقاء متماسكاً.",
+    "immediateHelp": "مساعدة فورية",
+    "backToDashboard": "العودة إلى اللوحة",
+    "placeholder": "شارك ما تشعر به...",
+    "openingMessage": "أنت في مساحة آمنة. أنا هنا للإصغاء — لا تستعجل. ما الذي يحدث الآن؟",
+    "supportive": {
+      "s1": "أسمعك، وأنا هنا. خذ نَفَساً بطيئاً معي — لست مضطراً لحمل هذا وحدك الآن.",
+      "s2": "شكراً لإخباري. ما تشعر به منطقي. هل أنت بأمان في هذه اللحظة؟",
+      "s3": "أنا باقٍ هنا معك. هل يمكنك وصف شيء واحد في الغرفة حولك؟"
+    }
+  },
+  "history": {
+    "title": "خزانة السجل",
+    "subtitle": "تنقّل عبر الزمن لاستكشاف محادثاتك.",
+    "dragHint": "اسحب · مرّر · انقر للتنقّل عبر الزمن",
+    "allTime": "كل الأوقات",
+    "selectedMoment": "اللحظة المختارة",
+    "conversation": "محادثة",
+    "conversations": "محادثات",
+    "clear": "مسح",
+    "loadingMemories": "جارٍ تحميل الذكريات...",
+    "noConversationsAt": "لا توجد محادثات في هذه اللحظة.",
+    "noMessagesYet": "لا توجد رسائل بعد.",
+    "selectToPreview": "اختر لحظة للمعاينة.",
+    "preview": "معاينة",
+    "replay": "إعادة عرض",
+    "openInChat": "فتح في الدردشة",
+    "shareMoment": "مشاركة اللحظة",
+    "searchMemories": "ابحث في الذكريات...",
+    "noConversationsFound": "لم يتم العثور على محادثات.",
+    "reflection": "تأمّل",
+    "newSession": "جلسة جديدة",
+    "groups": {
+      "today": "اليوم",
+      "yesterday": "الأمس",
+      "thisWeek": "هذا الأسبوع",
+      "older": "أقدم"
+    },
+    "replayUI": {
+      "selectToReplay": "اختر لحظة لإعادة عرضها.",
+      "loadingReplay": "جارٍ التحميل…",
+      "noMessages": "لا توجد رسائل لإعادة عرضها.",
+      "play": "إعادة",
+      "pause": "إيقاف",
+      "keyMoments": "لحظات مفتاحية"
+    },
+    "headerDateFull": "long",
+    "noConversation": "جلسة",
+    "intensityPct": "الشدة {{pct}}٪",
+    "readyToCarry": "جلسة"
+  },
+  "insights": {
+    "title": "الرؤى",
+    "subtitleShort": "أنماطك العاطفية عبر الزمن",
+    "subtitle": "مرصدك العاطفي",
+    "moodTrend": "اتجاه شدّة المزاج",
+    "spectrum": "الطيف العاطفي",
+    "weekly": "الإيقاع الأسبوعي",
+    "cognitive": "الأنماط الذهنية",
+    "noPatterns": "لم تُكتشف أنماط بعد.",
+    "aiReflections": "تأمّلات من الذكاء الاصطناعي",
+    "observatory": "المرصد العاطفي",
+    "dominantPattern": "النمط السائد",
+    "intensityShift": "تحوّل الشدّة",
+    "stats": {
+      "sessions": "الجلسات",
+      "avgIntensity": "متوسط الشدة",
+      "activeDays": "أيام نشطة"
+    },
+    "timeline": {
+      "title": "الخط الزمني العاطفي",
+      "hint": "حرّك المؤشر · انقر للفتح",
+      "footer": "كل عقدة لحظة في رحلتك العاطفية.",
+      "intensity": "الشدة"
+    },
+    "empty": {
+      "title": "مرصدك يستيقظ",
+      "desc": "كلما تأمّلت عبر الجلسات، ستكشف هذه المساحة أنماطاً وإيقاعات ورؤى لطيفة عن عالمك الداخلي.",
+      "trends": "اتجاهات المزاج عبر الزمن",
+      "weeklyRhythm": "الإيقاع العاطفي الأسبوعي",
+      "ai": "تأمّلات من الذكاء الاصطناعي",
+      "cta": "ابدأ جلستك الأولى"
+    }
+  },
+  "breathing": {
+    "guidedBreathing": "تنفّس موجَّه",
+    "findCalm": "ابحث عن هدوئك",
+    "intro": "يستخدم هذا التمرين تقنية التنفس 4-2-6 لتقليل القلق وتعزيز الاسترخاء.",
+    "inhale4": "شهيق 4 ثوانٍ",
+    "hold2": "حبس 2 ثانية",
+    "exhale6": "زفير 6 ثوانٍ",
+    "begin": "ابدأ التمرين",
+    "endExercise": "إنهاء التمرين",
+    "phases": {
+      "inhale": "شهيق",
+      "hold": "حبس",
+      "exhale": "زفير"
+    },
+    "cycle": "دورة {{num}}",
+    "close": "إغلاق",
+    "cycleAndPhase": "الدورة {{num}} • {{phase}}"
+  },
+  "mood": {
+    "sessionDuration": "مدة الجلسة",
+    "moodTrend": "اتجاه المزاج",
+    "improving": "يتحسّن",
+    "challenging": "صعب",
+    "steady": "ثابت",
+    "intensityOverTime": "الشدة عبر الزمن",
+    "averageIntensity": "متوسط الشدة",
+    "breathingExercises": "تمارين التنفس",
+    "completed": "تم إكمال {{count}}"
+  },
+  "clinic": {
+    "sanctuaryAwaits": "ملاذك النفسي بانتظارك",
+    "enterClinic": "ادخل العيادة",
+    "audioHint": "🔊 انقر لتفعيل الصوت الغامر",
+    "welcomeTraveler": "مرحباً، {{name}}",
+    "traveler": "مسافر",
+    "scenes": {
+      "s1": "الاقتراب من العيادة...",
+      "s2": "يفتح الباب ببطء...",
+      "s3": "يملأ الضوء الدافئ الغرفة...",
+      "s4": "السير نحو مكتب المعالج...",
+      "s5": "الجلوس...",
+      "s6": "الجلسة على وشك أن تبدأ..."
+    }
+  },
+  "interview": {
+    "title": "التقييم الأولي",
+    "intro": "مرحباً، أنا د. سنتينل. سعيد بقرارك اتخاذ هذه الخطوة. قبل أن نبدأ جلساتنا، أودّ أن أتعرّف عليك أكثر. لا تستعجل — أجب بالطريقة التي تريحك.",
+    "firstQuestion": "لنبدأ بهدوء. كيف كانت مشاعرك في الأسابيع الأخيرة؟",
+    "placeholder": "شارك أفكارك...",
+    "starting": "بدء جلستك...",
+    "fallback": "أقدّر مشاركتك. هل يمكنك إخباري المزيد عمّا يدور في ذهنك مؤخّراً؟",
+    "enableVoice": "تفعيل الصوت",
+    "disableVoice": "إيقاف الصوت"
+  },
+  "errors": {
+    "generic": "حدث خطأ ما",
+    "network": "خطأ في الشبكة",
+    "noPermission": "تم رفض الإذن"
+  },
+  "aria": {
+    "back": "رجوع",
+    "openSessions": "فتح الجلسات",
+    "close": "إغلاق",
+    "sessions": "الجلسات"
+  },
+  "doctor": {
+    "title": "بوابة الطبيب",
+    "subtitle": "عرض إكلينيكي للقراءة فقط",
+    "signInRequired": "يجب تسجيل الدخول",
+    "accessDenied": "الوصول مرفوض",
+    "accessDeniedHint": "تحتاج إلى صلاحية الطبيب للوصول إلى هذه البوابة.",
+    "patients": "المرضى",
+    "sessions": "جلسة",
+    "recentSessions": "الجلسات الأخيرة",
+    "noSessions": "لا توجد جلسات بعد.",
+    "empty": "لا يوجد مرضى للعرض.",
+    "disclaimer": "وصول للقراءة فقط. لا يتم إرسال أي تعديلات أو رسائل من هذه البوابة.",
+    "stats": {
+      "patients": "المرضى",
+      "activeSessions": "إجمالي الجلسات",
+      "readOnly": "مستوى الوصول",
+      "readOnlyValue": "قراءة فقط"
+    },
+    "review": {
+      "actions": "إجراءات الطبيب",
+      "timeline": "سجل المراجعات",
+      "new": "مراجعة جديدة",
+      "submit": "حفظ المراجعة",
+      "created": "تم حفظ المراجعة",
+      "empty": "لا توجد مراجعات أو ملاحظات أو إشارات بعد.",
+      "noSummary": "(بدون ملخص)",
+      "summaryPlaceholder": "ملخص إكلينيكي…",
+      "status": {
+        "pending": "قيد الانتظار",
+        "in_review": "قيد المراجعة",
+        "closed": "مغلقة",
+        "escalated": "تم تصعيدها"
+      }
+    },
+    "notes": {
+      "new": "إضافة ملاحظة",
+      "add": "إضافة ملاحظة",
+      "added": "تمت إضافة الملاحظة",
+      "placeholder": "ملاحظة إكلينيكية خاصة…",
+      "patientVisible": "مرئية للمريض"
+    },
+    "crisis": {
+      "tab": "قائمة الأزمات",
+      "empty": "لا توجد إشارات أزمة نشطة.",
+      "noReason": "(لم يُذكر سبب)",
+      "acknowledge": "إقرار",
+      "acked": "تم إقرار الإشارة",
+      "resolve": "إغلاق",
+      "resolved": "تم إغلاق الإشارة",
+      "openPatient": "فتح المريض",
+      "raised": "تم رفع الإشارة",
+      "escalateHigh": "تصعيد (عالٍ)",
+      "escalateCritical": "تصعيد (حرج)",
+      "severity": {
+        "low": "منخفض",
+        "medium": "متوسط",
+        "high": "عالٍ",
+        "critical": "حرج"
+      },
+      "source": {
+        "system": "النظام",
+        "doctor": "الطبيب",
+        "self_report": "إبلاغ ذاتي"
+      },
+      "status": {
+        "open": "مفتوح",
+        "acknowledged": "مُقَر",
+        "resolved": "مغلق"
+      },
+      "emptyHint": "لا توجد إشارات أزمة مفتوحة حاليًا.",
+      "emptyTag": "كل شيء هادئ"
+    },
+    "timeline": {
+      "review": "مراجعة",
+      "note": "ملاحظة",
+      "flag": "إشارة أزمة"
+    },
+    "content": {
+      "tab": "المحتوى"
+    },
+    "tab": {
+      "dashboard": "لوحة التحكم",
+      "insights": "الرؤى",
+      "users": "المستخدمون"
+    },
+    "searchPlaceholder": "ابحث عن المرضى بالاسم أو المعرّف أو المشاعر…",
+    "noMatches": "لا يوجد مرضى مطابقون لهذا البحث.",
+    "dash": {
+      "active7d": "نشط (٧ أيام)",
+      "activityParticipation": "مشاركة الأنشطة",
+      "crisisOpen": "أزمات مفتوحة",
+      "emotionalLandscape": "المشهد العاطفي",
+      "engagement": "التفاعل",
+      "heuristicNote": "مؤشر إرشادي — ليس تشخيصًا سريريًا.",
+      "live": {
+        "connecting": "يتصل…",
+        "stable": "مباشر · مستقر"
+      },
+      "recentSessions": "الجلسات الأخيرة",
+      "totalPatients": "إجمالي المرضى",
+      "totalSessions": "إجمالي الجلسات"
+    },
+    "insights": {
+      "pending": "يولّد الرؤى…",
+      "subtitle": "أنماط بمساعدة الذكاء الاصطناعي عبر الجلسات الأخيرة.",
+      "title": "رؤى للطبيب"
+    }
+  },
+  "voiceMode": {
+    "return": "رجوع",
+    "title": "الوضع الصوتي",
+    "speaking": "سنتينل يتحدث",
+    "listening": "أستمع…",
+    "tapToSpeak": "اضغط للتحدث",
+    "stopListening": "إيقاف الاستماع",
+    "startListening": "بدء الاستماع",
+    "browserUnavailable": "التعرف الصوتي غير متاح في هذا المتصفح.",
+    "you": "أنت",
+    "sentinel": "سنتينل"
+  },
+  "emergencyHotlines": {
+    "h1": {
+      "name": "خط 988 لمنع الانتحار والأزمات",
+      "detail": "اتصل أو راسل 988 (الولايات المتحدة)"
+    },
+    "h2": {
+      "name": "خط الأزمات النصي",
+      "detail": "أرسل HOME إلى 741741"
+    },
+    "h3": {
+      "name": "خطوط المساعدة الدولية",
+      "detail": "findahelpline.com"
+    }
+  },
+  "theme": {
+    "theme": "السمة",
+    "subtitle": "بنفسجي عصبي · ذهبي سينمائي · لؤلؤي فاتح",
+    "purple": "السمة البنفسجية",
+    "gold": "السمة الذهبية",
+    "light": "السمة الفاتحة",
+    "cycle": "تبديل السمة",
+    "switchToPurple": "التبديل إلى البنفسجية",
+    "switchToGold": "التبديل إلى الذهبية"
+  },
+  "diagnostics": {
+    "gate": {
+      "title": "لوحة التشخيص مقفلة",
+      "body": "هذه اللوحة متاحة فقط في وضع التطوير أو باستخدام ?debug=1."
+    },
+    "header": {
+      "eyebrow": "منصة الصوت",
+      "title": "التشخيص والقياسات"
+    },
+    "tabs": {
+      "flow": "اختبار التدفق العربي",
+      "telemetry": "القياسات"
+    },
+    "flowTest": {
+      "eyebrow": "اختبار شامل",
+      "title": "اختبار تدفق الصوت العربي",
+      "subtitle": "يسجّل، يحوّل، يولّد، ويشغّل العبارة العربية القياسية.",
+      "phraseLabel": "العبارة المستهدفة",
+      "run": "تشغيل الاختبار",
+      "stop": "إيقاف",
+      "processing": "جاري المعالجة…",
+      "reset": "إعادة",
+      "copyJson": "نسخ JSON",
+      "exportJson": "تصدير",
+      "timeline": "الجدول الزمني",
+      "latency": "تفاصيل الكمون",
+      "transcript": "النص المكتوب",
+      "similarity": "التشابه مع الهدف: {{pct}}٪"
+    },
+    "verdict": {
+      "pending": "بانتظار",
+      "pass": "نجاح",
+      "warn": "تحذير",
+      "fail": "فشل"
+    },
+    "stages": {
+      "recording": "تسجيل",
+      "uploading": "رفع",
+      "stt": "تحويل الصوت إلى نص",
+      "thinking": "تفكير",
+      "generation": "توليد المساعد",
+      "tts": "تحويل النص إلى صوت",
+      "waveform": "الموجة الصوتية",
+      "autoplay": "تشغيل تلقائي",
+      "complete": "اكتمل"
+    },
+    "detail": {
+      "recordingHint": "انطق العبارة بوضوح…",
+      "noTranscript": "لم يتم إرجاع نص",
+      "autoplayBlocked": "المتصفح حجب التشغيل التلقائي"
+    },
+    "latency": {
+      "recording": "تسجيل",
+      "upload": "رفع",
+      "stt": "STT",
+      "tts": "TTS",
+      "total": "الإجمالي",
+      "retries": "إعادات"
+    },
+    "agg": {
+      "upload": "متوسط الرفع",
+      "stt": "متوسط STT",
+      "tts": "متوسط TTS",
+      "total": "المتوسط الإجمالي",
+      "retries": "إعادات",
+      "autoplay": "نجاح التشغيل"
+    },
+    "dash": {
+      "ringBuffer": "المخزن الحلقي (آخر 200)",
+      "clear": "مسح",
+      "empty": "لا توجد أحداث قياس حتى الآن."
+    },
+    "filter": {
+      "all": "الكل",
+      "upload": "رفع",
+      "stt": "STT",
+      "tts": "TTS",
+      "autoplay": "تلقائي",
+      "actions": "إجراءات",
+      "retries": "إعادات",
+      "errors": "أخطاء",
+      "replay": "إعادة"
+    },
+    "toast": {
+      "failed": "فشل الاختبار: {{reason}}",
+      "copied": "تم النسخ",
+      "cleared": "تم مسح المخزن"
+    }
+  },
+  "voiceStatus": {
+    "recording": "جارٍ التسجيل",
+    "uploading": "جارٍ الرفع",
+    "transcribing": "جارٍ التفريغ",
+    "thinking": "جارٍ التفكير",
+    "generating": "إنشاء الصوت",
+    "ready": "جاهز",
+    "error": "خطأ في المعالجة"
+  },
+  "activities": {
+    "title": "الأنشطة",
+    "subtitle": "تمارين وأدوات موجهة",
+    "empty": "لا توجد أنشطة بعد.",
+    "start": "ابدأ",
+    "completedToast": "تم إكمال النشاط",
+    "kind": {
+      "all": "الكل",
+      "cbt_flow": "تدفق CBT",
+      "image_interpretation": "تفسير الصور",
+      "educational_video": "فيديو تعليمي",
+      "spot_difference": "اكتشف الفرق"
+    },
+    "runner": {
+      "finish": "إنهاء",
+      "yourInterpretation": "تفسيرك…",
+      "watched": "تمت المشاهدة.",
+      "pleaseWatch": "يرجى المشاهدة حتى النهاية.",
+      "autoplay": "تشغيل التالي تلقائياً",
+      "related": "ذات صلة",
+      "continueWatching": "متابعة المشاهدة",
+      "playlist": "قائمة التشغيل",
+      "spotProgress": "وجدت {{found}} من {{total}}",
+      "reset": "إعادة تعيين"
+    },
+    "manage": {
+      "newTitle": "إنشاء نشاط جديد",
+      "kind": "النوع",
+      "assetTitle": "العنوان",
+      "description": "الوصف",
+      "contentJson": "المحتوى (JSON)",
+      "invalidJson": "JSON غير صالح",
+      "created": "تم إنشاء النشاط",
+      "existing": "الأنشطة الموجودة",
+      "empty": "لا توجد أنشطة بعد.",
+      "publish": "نشر",
+      "unpublish": "إلغاء النشر",
+      "archive": "أرشفة",
+      "published": "منشور",
+      "draft": "مسودة",
+      "archived": "مؤرشف",
+      "editing": "تحرير"
+    },
+    "ai": {
+      "disclaimer": "اقتراحات الذكاء الاصطناعي للإرشاد فقط وقد تكون غير دقيقة.",
+      "hintPh": "تلميح اختياري لتوجيه الذكاء الاصطناعي…",
+      "suggestionOnly": "اقتراح فقط",
+      "title": "مساعد الذكاء الاصطناعي"
+    },
+    "builder": {
+      "video": {
+        "descPh": "وصف قصير…",
+        "descriptionPh": "صف قائمة التشغيل هذه…",
+        "empty": "لا توجد قوائم تشغيل بعد.",
+        "goalPh": "ما الذي يجب أن يخرج به المريض؟",
+        "namePh": "اسم قائمة التشغيل",
+        "playlists": "قوائم التشغيل",
+        "removePlaylist": "إزالة قائمة التشغيل",
+        "selectOrCreate": "اختر قائمة تشغيل أو أنشئ واحدة جديدة.",
+        "tagsPh": "وسم1، وسم2…",
+        "titlePh": "عنوان الفيديو",
+        "upload": "رفع الفيديو"
+      }
+    },
+    "difficulty": {
+      "challenging": "تحدٍّ",
+      "gentle": "لطيف",
+      "moderate": "متوسط"
+    }
+  },
+  "session": {
+    "closure": {
+      "hope": "احمل هذا الهدوء معك."
+    }
+  }
+}

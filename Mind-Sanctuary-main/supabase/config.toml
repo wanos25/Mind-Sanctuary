@@ -1,0 +1,16 @@
+project_id = "fsterbxivhhzipfgpvou"
+
+[functions.chat]
+verify_jwt = true
+
+[functions.reflect]
+verify_jwt = true
+
+[functions.transcribe-voice]
+verify_jwt = true
+
+[functions.tts-reply]
+verify_jwt = true
+
+[functions.doctor-ai-assist]
+verify_jwt = true

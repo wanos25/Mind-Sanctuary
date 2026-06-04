@@ -1,0 +1,7 @@
+-- 09_realtime.sql — realtime publication
+-- NOTE: The current Cloud backend has NO tables on supabase_realtime.
+-- This file is intentionally a no-op. Uncomment the lines below if you
+-- decide to enable realtime for chat in the future.
+--
+-- ALTER PUBLICATION supabase_realtime ADD TABLE public.chat_messages;
+-- ALTER TABLE public.chat_messages REPLICA IDENTITY FULL;

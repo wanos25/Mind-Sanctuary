@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ──────────────────────────────────────────────────────────────────
+   * THEME: GOLD (alternate). Stays as the default unscoped `:root` so
+   * existing component utility classes (gold-text, gold-glow, etc.) keep
+   * rendering unchanged on the gold theme.
+   * ──────────────────────────────────────────────────────────────────*/
+  :root,
+  :root[data-theme="gold"] {
+    --background: 20 12% 8%;
+    --foreground: 38 30% 90%;
+
+    --card: 20 15% 12%;
+    --card-foreground: 38 30% 90%;
+
+    --popover: 20 15% 10%;
+    --popover-foreground: 38 30% 90%;
+
+    --primary: 38 50% 55%;
+    --primary-foreground: 20 12% 8%;
+
+    --secondary: 20 18% 18%;
+    --secondary-foreground: 38 30% 85%;
+
+    --muted: 20 10% 15%;
+    --muted-foreground: 30 15% 55%;
+
+    --accent: 38 60% 45%;
+    --accent-foreground: 20 12% 8%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 20%;
+    --input: 30 15% 20%;
+    --ring: 38 50% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --gold: 38 50% 55%;
+    --gold-light: 38 60% 70%;
+    --gold-dark: 38 40% 35%;
+    --chocolate: 20 30% 15%;
+    --chocolate-deep: 20 25% 10%;
+    --coffee: 25 20% 22%;
+    --warmth: 30 25% 25%;
+
+    --glass-bg: 20 15% 12% / 0.6;
+    --glass-border: 38 50% 55% / 0.15;
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    --gradient-gold: linear-gradient(135deg, hsl(38 50% 55%), hsl(38 60% 70%));
+    --gradient-dark: linear-gradient(180deg, hsl(20 12% 8%), hsl(20 25% 5%));
+    --gradient-warm: linear-gradient(135deg, hsl(20 30% 15%), hsl(25 20% 22%));
+
+    --font-display: 'Cinzel', serif;
+    --font-body: 'Raleway', sans-serif;
+    --font-ui: 'Inter', sans-serif;
+
+    --sidebar-background: 20 15% 10%;
+    --sidebar-foreground: 38 30% 85%;
+    --sidebar-primary: 38 50% 55%;
+    --sidebar-primary-foreground: 20 12% 8%;
+    --sidebar-accent: 20 18% 18%;
+    --sidebar-accent-foreground: 38 30% 85%;
+    --sidebar-border: 30 15% 20%;
+    --sidebar-ring: 38 50% 55%;
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+   * THEME: PURPLE NEURAL (default).
+   * Rebinds the same semantic tokens — components don't change.
+   * Cyan + magenta accents, deep indigo background, neural glow.
+   * ──────────────────────────────────────────────────────────────────*/
+  :root[data-theme="purple"] {
+    --background: 250 35% 6%;
+    --foreground: 270 40% 95%;
+
+    --card: 252 32% 10%;
+    --card-foreground: 270 40% 95%;
+
+    --popover: 252 35% 8%;
+    --popover-foreground: 270 40% 95%;
+
+    --primary: 268 85% 68%;
+    --primary-foreground: 250 35% 6%;
+
+    --secondary: 254 28% 16%;
+    --secondary-foreground: 270 40% 92%;
+
+    --muted: 254 22% 14%;
+    --muted-foreground: 260 18% 65%;
+
+    --accent: 188 95% 60%;          /* cyan */
+    --accent-foreground: 250 35% 6%;
+
+    --destructive: 350 75% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 260 30% 22%;
+    --input: 260 30% 20%;
+    --ring: 268 85% 68%;
+
+    /* Rebind the gold-family tokens to purple/cyan so existing
+       .gold-text / .gold-glow / .text-glow classes paint correctly. */
+    --gold: 268 85% 68%;
+    --gold-light: 188 95% 65%;     /* cyan highlight */
+    --gold-dark: 280 70% 38%;      /* deep magenta-indigo */
+    --chocolate: 252 32% 12%;
+    --chocolate-deep: 250 35% 6%;
+    --coffee: 254 28% 18%;
+    --warmth: 268 40% 22%;
+
+    --glass-bg: 252 32% 12% / 0.55;
+    --glass-border: 268 85% 68% / 0.22;
+    --glass-shadow: 0 8px 40px 0 hsl(268 90% 30% / 0.45);
+
+    --gradient-gold: linear-gradient(135deg, hsl(268 85% 68%), hsl(188 95% 65%));
+    --gradient-dark: linear-gradient(180deg, hsl(250 35% 6%), hsl(258 45% 4%));
+    --gradient-warm: linear-gradient(135deg, hsl(268 70% 18%), hsl(280 55% 22%));
+
+    --sidebar-background: 252 35% 8%;
+    --sidebar-foreground: 270 40% 92%;
+    --sidebar-primary: 268 85% 68%;
+    --sidebar-primary-foreground: 250 35% 6%;
+    --sidebar-accent: 254 28% 16%;
+    --sidebar-accent-foreground: 270 40% 92%;
+    --sidebar-border: 260 30% 22%;
+    --sidebar-ring: 268 85% 68%;
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+   * THEME: LIGHT CINEMATIC — soft pearl backgrounds, subtle gold accents,
+   * muted indigo secondary glow. Premium medical-tech, emotionally calm.
+   * ──────────────────────────────────────────────────────────────────*/
+  :root[data-theme="light"] {
+    /* Softer pearl-mauve — eliminates glare, holds cinematic identity */
+    --background: 232 22% 88%;
+    --foreground: 232 42% 9%;
+
+    --card: 232 24% 93%;
+    --card-foreground: 232 42% 9%;
+
+    --popover: 232 26% 94%;
+    --popover-foreground: 232 42% 9%;
+
+    --primary: 38 64% 38%;
+    --primary-foreground: 36 30% 98%;
+
+    --secondary: 232 20% 84%;
+    --secondary-foreground: 232 36% 14%;
+
+    --muted: 232 18% 82%;
+    --muted-foreground: 232 26% 28%;
+
+    --accent: 268 62% 48%;
+    --accent-foreground: 36 30% 98%;
+
+    --destructive: 0 74% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 232 18% 72%;
+    --input: 232 20% 80%;
+    --ring: 38 64% 38%;
+
+    --gold: 38 64% 38%;
+    --gold-light: 38 74% 52%;
+    --gold-dark: 38 60% 24%;
+    --chocolate: 232 18% 82%;
+    --chocolate-deep: 232 22% 76%;
+    --coffee: 232 16% 80%;
+    --warmth: 38 44% 78%;
+
+    --glass-bg: 232 24% 93% / 0.70;
+    --glass-border: 232 30% 50% / 0.45;
+    --glass-shadow: 0 12px 40px 0 hsl(232 40% 24% / 0.18);
+
+    --gradient-gold: linear-gradient(135deg, hsl(38 64% 38%), hsl(38 74% 52%));
+    --gradient-dark: linear-gradient(180deg, hsl(232 22% 90%), hsl(232 22% 84%));
+    --gradient-warm: linear-gradient(135deg, hsl(38 44% 80%), hsl(268 36% 84%));
+
+    --sidebar-background: 232 24% 90%;
+    --sidebar-foreground: 232 40% 12%;
+    --sidebar-primary: 38 64% 38%;
+    --sidebar-primary-foreground: 36 30% 98%;
+    --sidebar-accent: 232 20% 84%;
+    --sidebar-accent-foreground: 232 36% 14%;
+    --sidebar-border: 232 18% 70%;
+    --sidebar-ring: 38 64% 38%;
+  }
+
+  /* Purple neural ambient backdrop applied to body when theme is active. */
+  :root[data-theme="purple"] body {
+    background:
+      radial-gradient(ellipse at 18% 22%, hsl(268 80% 35% / 0.28) 0%, transparent 55%),
+      radial-gradient(ellipse at 82% 78%, hsl(188 90% 45% / 0.18) 0%, transparent 55%),
+      radial-gradient(circle at 50% 50%, hsl(330 80% 45% / 0.10) 0%, transparent 70%),
+      hsl(var(--background));
+    background-attachment: fixed;
+  }
+
+  /* Light cinematic ambient — soft pearl with subtle indigo + gold halos. */
+  :root[data-theme="light"] body {
+    background:
+      radial-gradient(ellipse at 14% 18%, hsl(268 70% 50% / 0.22) 0%, transparent 55%),
+      radial-gradient(ellipse at 86% 82%, hsl(38 80% 44% / 0.20) 0%, transparent 55%),
+      radial-gradient(circle at 50% 50%, hsl(232 40% 50% / 0.16) 0%, transparent 70%),
+      hsl(var(--background));
+    background-attachment: fixed;
+  }
+
+  /* Themed scrollbar — picks up whichever theme is active via --primary. */
+  ::-webkit-scrollbar-thumb { background: hsl(var(--primary) / 0.35); }
+  ::-webkit-scrollbar-thumb:hover { background: hsl(var(--primary) / 0.55); }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .glass {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--glass-shadow);
+  }
+
+  .glass-strong {
+    background: hsl(20 15% 12% / 0.85);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--glass-shadow);
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 20px hsl(38 50% 55% / 0.3), 0 0 60px hsl(38 50% 55% / 0.1);
+  }
+
+  .gold-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px hsl(38 50% 55% / 0.5), 0 0 40px hsl(38 50% 55% / 0.2);
+  }
+
+  .warm-vignette {
+    box-shadow: inset 0 0 150px hsl(20 30% 5% / 0.8);
+  }
+
+  .particle-bg {
+    background-image: radial-gradient(circle at 20% 50%, hsl(38 50% 55% / 0.03) 0%, transparent 50%),
+                       radial-gradient(circle at 80% 20%, hsl(38 60% 70% / 0.03) 0%, transparent 50%),
+                       radial-gradient(circle at 50% 80%, hsl(25 20% 22% / 0.05) 0%, transparent 50%);
+  }
+
+  .sentinel-btn {
+    @apply relative overflow-hidden px-8 py-3 rounded-lg font-medium tracking-wider uppercase text-sm;
+    font-family: var(--font-ui);
+    background: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--gold-dark)) 100%);
+    color: hsl(var(--background));
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .sentinel-btn:hover {
+    box-shadow: 0 0 30px hsl(38 50% 55% / 0.4), 0 0 60px hsl(38 50% 55% / 0.2);
+    transform: translateY(-2px);
+  }
+
+  .sentinel-btn-outline {
+    @apply relative overflow-hidden px-8 py-3 rounded-lg font-medium tracking-wider uppercase text-sm;
+    font-family: var(--font-ui);
+    background: transparent;
+    border: 1px solid hsl(var(--gold) / 0.5);
+    color: hsl(var(--gold));
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .sentinel-btn-outline:hover {
+    background: hsl(var(--gold) / 0.1);
+    border-color: hsl(var(--gold));
+    box-shadow: 0 0 20px hsl(38 50% 55% / 0.2);
+  }
+
+  .avatar-ring {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  .avatar-ring:hover, .avatar-ring.selected {
+    border-color: hsl(var(--gold));
+    box-shadow: 0 0 15px hsl(38 50% 55% / 0.4);
+  }
+
+  .speech-bubble {
+    @apply glass rounded-2xl p-5 relative;
+    border-left: 3px solid hsl(var(--gold) / 0.5);
+  }
+
+  .chat-input-area {
+    @apply glass-strong rounded-2xl p-4;
+    border: 1px solid hsl(var(--gold) / 0.2);
+  }
+
+  .emotion-badge {
+    @apply px-3 py-1 rounded-full text-xs font-medium;
+    font-family: var(--font-ui);
+    background: hsl(var(--gold) / 0.15);
+    color: hsl(var(--gold-light));
+    border: 1px solid hsl(var(--gold) / 0.3);
+  }
+  .breathing-pulse {
+    animation: breathe 5s ease-in-out infinite;
+  }
+
+  /* ── Light theme overrides for utilities that hardcoded dark values ── */
+  :root[data-theme="light"] .glass-strong {
+    background: hsl(232 24% 93% / 0.82);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--glass-shadow);
+  }
+  :root[data-theme="light"] .gold-glow {
+    box-shadow: 0 0 18px hsl(var(--primary) / 0.22), 0 0 48px hsl(var(--accent) / 0.10);
+  }
+  :root[data-theme="light"] .text-glow {
+    text-shadow: 0 0 14px hsl(var(--primary) / 0.28), 0 0 28px hsl(var(--accent) / 0.12);
+  }
+  :root[data-theme="light"] .warm-vignette {
+    box-shadow: inset 0 0 180px hsl(230 35% 70% / 0.18);
+  }
+  :root[data-theme="light"] .particle-bg {
+    background-image:
+      radial-gradient(circle at 20% 50%, hsl(var(--primary) / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--accent) / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 50% 80%, hsl(230 30% 70% / 0.06) 0%, transparent 50%);
+  }
+  :root[data-theme="light"] .sentinel-btn {
+    color: hsl(36 30% 99%);
+  }
+  :root[data-theme="light"] ::-webkit-scrollbar-track {
+    background: hsl(var(--secondary));
+  }
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.008); }
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold) / 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold) / 0.5);
+}
+
+/* H2 — Mobile GPU relief: tone down expensive backdrop-blur on small screens
+   where compositing cost is highest. Keeps glass aesthetic, reduces fps loss. */
+@media (max-width: 640px) {
+  .backdrop-blur-3xl { backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; }
+  .backdrop-blur-2xl { backdrop-filter: blur(10px) !important; -webkit-backdrop-filter: blur(10px) !important; }
+  .backdrop-blur-xl  { backdrop-filter: blur(8px)  !important; -webkit-backdrop-filter: blur(8px)  !important; }
+}
+
+/* H7 — Adaptive compositing by GPU tier. Set on <html> via applyGpuTierToDocument().
+   Low-tier (especially mobile) collapses backdrop blur to opaque surfaces,
+   removes mix-blend-mode layers, and shortens animated shadow spread. */
+:root[data-gpu-tier="low"] .glass,
+:root[data-gpu-tier="low"] .glass-strong {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  background: hsl(var(--card) / 0.92) !important;
+}
+:root[data-gpu-tier="low"] .backdrop-blur-3xl,
+:root[data-gpu-tier="low"] .backdrop-blur-2xl,
+:root[data-gpu-tier="low"] .backdrop-blur-xl,
+:root[data-gpu-tier="low"] .backdrop-blur-lg,
+:root[data-gpu-tier="low"] .backdrop-blur-md {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+:root[data-gpu-tier="medium"][data-gpu-mobile="1"] .backdrop-blur-3xl {
+  backdrop-filter: blur(10px) !important; -webkit-backdrop-filter: blur(10px) !important;
+}
+:root[data-reduced-fx="1"] .gold-glow,
+:root[data-reduced-fx="1"] .text-glow {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+/* Strip expensive compositing layers from ambient backdrops on low tier. */
+:root[data-gpu-tier="low"] [data-ambient-mixblend] { display: none !important; }
+:root[data-gpu-tier="low"] [data-ambient-particles] { display: none !important; }
+
+/* H5 — Reduced motion: collapse infinite/large animations to a calmer baseline
+   without removing layout-affecting transitions. Additive, never destructive. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.08s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* H5 — Keyboard focus visibility for all interactive surfaces. */
+:where(button, a, [role="button"], input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid hsl(var(--gold, 38 60% 55%) / 0.85);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ──────────────────────────────────────────────────────────────────
+ * Polish utilities — additive micro-interaction layer.
+ * Cheap on GPU: transform/opacity only. Honors reduced-motion via
+ * the global override above (which collapses animation-duration).
+ * ──────────────────────────────────────────────────────────────── */
+@keyframes lov-shimmer-sweep {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer-text {
+  background: linear-gradient(
+    100deg,
+    hsl(var(--foreground)) 0%,
+    hsl(var(--foreground)) 35%,
+    hsl(var(--gold-light, 38 60% 70%)) 50%,
+    hsl(var(--foreground)) 65%,
+    hsl(var(--foreground)) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  animation: lov-shimmer-sweep 3.2s linear infinite;
+}
+
+/* Tactile press: subtle scale-in on active, gentle lift on hover.
+   Apply to any clickable container. */
+.tactile {
+  transition: transform 180ms cubic-bezier(0.22, 0.61, 0.36, 1),
+              box-shadow 220ms cubic-bezier(0.22, 0.61, 0.36, 1),
+              filter 220ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+.tactile:hover  { transform: translateY(-1px); }
+.tactile:active { transform: translateY(0) scale(0.985); }
+
+/* Premium tactile: adds a soft focus glow + hover depth. Pair with .tactile. */
+.tactile-premium {
+  position: relative;
+  box-shadow:
+    0 1px 0 hsl(0 0% 100% / 0.06) inset,
+    0 1px 2px hsl(230 40% 4% / 0.25),
+    0 0 0 0 hsl(var(--primary) / 0);
+}
+.tactile-premium:hover {
+  box-shadow:
+    0 1px 0 hsl(0 0% 100% / 0.08) inset,
+    0 6px 18px -8px hsl(var(--primary) / 0.45),
+    0 0 0 1px hsl(var(--primary) / 0.18);
+  filter: brightness(1.04);
+}
+.tactile-premium:focus-visible {
+  outline: none;
+  box-shadow:
+    0 1px 0 hsl(0 0% 100% / 0.08) inset,
+    0 8px 22px -8px hsl(var(--primary) / 0.55),
+    0 0 0 2px hsl(var(--primary) / 0.55);
+}
+.tactile-premium:active { filter: brightness(0.98); }
+
+/* Soft ring pulse for status dots / live indicators. GPU-safe. */
+@keyframes lov-ring-pulse {
+  0%   { box-shadow: 0 0 0 0   hsl(var(--gold) / 0.55); }
+  70%  { box-shadow: 0 0 0 10px hsl(var(--gold) / 0); }
+  100% { box-shadow: 0 0 0 0   hsl(var(--gold) / 0); }
+}
+.ring-pulse { animation: lov-ring-pulse 1.8s ease-out infinite; }
+
+/* Aurora pulse: ambient halo behind empty-state hero icons. */
+@keyframes lov-aurora-breathe {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50%      { opacity: 0.6;  transform: scale(1.08); }
+}
+.aurora-breathe { animation: lov-aurora-breathe 4.2s ease-in-out infinite; }
+
+/* Loading shimmer overlay for buttons in pending state. */
+@keyframes lov-btn-shimmer {
+  0%   { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+.btn-loading-shimmer::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(100deg,
+    transparent 20%,
+    hsl(0 0% 100% / 0.18) 50%,
+    transparent 80%);
+  transform: translateX(-120%);
+  animation: lov-btn-shimmer 1.4s linear infinite;
+  pointer-events: none;
+}
+
+/* Low-tier / reduced-motion: kill ambient polish loops entirely. */
+:root[data-gpu-tier="low"] .shimmer-text   { animation: none; color: hsl(var(--foreground)); }
+:root[data-gpu-tier="low"] .ring-pulse     { animation: none; }
+:root[data-gpu-tier="low"] .aurora-breathe { animation: none; opacity: 0.4; }
+:root[data-gpu-tier="low"] .btn-loading-shimmer::after { animation: none; opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .shimmer-text   { animation: none; color: hsl(var(--foreground)); }
+  .ring-pulse     { animation: none; }
+  .aurora-breathe { animation: none; opacity: 0.4; }
+  .btn-loading-shimmer::after { animation: none; opacity: 0; }
+  .tactile, .tactile-premium { transition: none; }
+  .animate-glow-pulse { animation: none !important; }
+  .breathing-pulse { animation: none !important; }
+}
+
+/* ── Accessibility: skip link ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.skip-link:focus {
+  top: 0.75rem;
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* ── RTL layout polish (build on logical props elsewhere) ── */
+[dir="rtl"] .speech-bubble {
+  border-left: none;
+  border-right: 3px solid hsl(var(--gold) / 0.5);
+}
+
+[dir="rtl"] .sentinel-btn:focus-visible,
+[dir="ltr"] .sentinel-btn:focus-visible,
+.sentinel-btn:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* Mobile bottom nav safe area */
+.has-mobile-nav {
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  .has-mobile-nav {
+    padding-bottom: 0;
+  }
+}
+
